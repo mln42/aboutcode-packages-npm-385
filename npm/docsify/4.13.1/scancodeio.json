@@ -1,0 +1,4443 @@
+{
+"headers": [
+{
+  "tool_name": "scanpipe",
+  "tool_version": "v34.0.1",
+  "other_tools": [
+    "pkg:pypi/scancode-toolkit@32.3.0"
+  ],
+  "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+  "uuid": "45d126c4-5597-4b6c-9dbb-6801ccdfc631",
+  "created_date": "2024-12-06T17:50:28.720Z",
+  "notes": "",
+  "settings": {
+    "policies": "",
+    "product_name": "",
+    "product_version": "",
+    "ignored_patterns": null,
+    "attribution_template": "",
+    "ignored_vulnerabilities": null,
+    "ignored_dependency_scopes": null
+  },
+  "input_sources": [
+    {
+      "uuid": "046639d7-4230-4c31-8468-3adf53f9c113",
+      "filename": "docsify-4.13.1.tgz",
+      "download_url": "https://registry.npmjs.org/docsify/-/docsify-4.13.1.tgz",
+      "is_uploaded": false,
+      "tag": "",
+      "size": 217987,
+      "is_file": true,
+      "exists": true
+    }
+  ],
+  "runs": [
+    {
+      "pipeline_name": "scan_single_package",
+      "status": "success",
+      "description": "Scan a single package archive (or package manifest file).",
+      "selected_groups": [],
+      "selected_steps": null,
+      "uuid": "175cc050-23e5-4714-9c07-f00cdd7bea8d",
+      "created_date": "2024-12-06T17:50:28.726935Z",
+      "scancodeio_version": "v34.0.1",
+      "task_id": "175cc050-23e5-4714-9c07-f00cdd7bea8d",
+      "task_start_date": "2024-12-06T17:50:28.753647Z",
+      "task_end_date": "2024-12-06T17:50:43.956176Z",
+      "task_exitcode": 0,
+      "task_output": "",
+      "log": "2024-12-06 17:50:28.756 Pipeline [scan_single_package] starting\n2024-12-06 17:50:28.758 Step [download_missing_inputs] starting\n2024-12-06 17:50:28.759 Fetching input from https://registry.npmjs.org/docsify/-/docsify-4.13.1.tgz\n2024-12-06 17:50:29.009 Step [download_missing_inputs] completed in 0 seconds\n2024-12-06 17:50:29.012 Step [get_package_input] starting\n2024-12-06 17:50:29.013 Step [get_package_input] completed in 0 seconds\n2024-12-06 17:50:29.017 Step [collect_input_information] starting\n2024-12-06 17:50:29.022 Step [collect_input_information] completed in 0 seconds\n2024-12-06 17:50:29.024 Step [extract_input_to_codebase_directory] starting\n2024-12-06 17:50:29.052 Step [extract_input_to_codebase_directory] completed in 0 seconds\n2024-12-06 17:50:29.055 Step [extract_archives] starting\n2024-12-06 17:50:29.240 Step [extract_archives] completed in 0 seconds\n2024-12-06 17:50:29.245 Step [run_scan] starting\n2024-12-06 17:50:42.619 Step [run_scan] completed in 13 seconds\n2024-12-06 17:50:42.622 Step [load_inventory_from_toolkit_scan] starting\n2024-12-06 17:50:43.916 Step [load_inventory_from_toolkit_scan] completed in 1 seconds\n2024-12-06 17:50:43.919 Step [make_summary_from_scan_results] starting\n2024-12-06 17:50:43.952 Step [make_summary_from_scan_results] completed in 0 seconds\n2024-12-06 17:50:43.955 Pipeline completed in 15 seconds\n",
+      "execution_time": 15
+    },
+    {
+      "pipeline_name": "publish_to_federatedcode",
+      "status": "running",
+      "description": "Publish package scan to FederatedCode.",
+      "selected_groups": [],
+      "selected_steps": null,
+      "uuid": "990bf0d8-e047-4d5c-bf78-8c8f111809b6",
+      "created_date": "2024-12-06T17:51:05.843089Z",
+      "scancodeio_version": "v34.0.1",
+      "task_id": "990bf0d8-e047-4d5c-bf78-8c8f111809b6",
+      "task_start_date": "2024-12-06T17:51:05.861593Z",
+      "task_end_date": null,
+      "task_exitcode": null,
+      "task_output": "",
+      "log": "2024-12-06 17:51:05.864 Pipeline [publish_to_federatedcode] starting\n2024-12-06 17:51:05.868 Step [check_federatedcode_eligibility] starting\n2024-12-06 17:51:06.553 Step [check_federatedcode_eligibility] completed in 1 seconds\n2024-12-06 17:51:06.558 Step [get_package_repository] starting\n2024-12-06 17:51:06.560 Step [get_package_repository] completed in 0 seconds\n2024-12-06 17:51:06.565 Step [clone_repository] starting\n2024-12-06 17:51:07.716 Step [clone_repository] completed in 1 seconds\n2024-12-06 17:51:07.722 Step [add_scan_result] starting\n",
+      "execution_time": null
+    }
+  ],
+  "extra_data": {
+    "md5": "3c3a963b7b21ebc4650b259edc5c70d8",
+    "sha1": "5ad89d3c0529d336bd1d1c20a664db129afd607a",
+    "size": 217987,
+    "sha256": "3b6d2a822f7d8d202d9ecb521861a4d8071f6c6cac57f0132a88bcc5fb2de534",
+    "sha512": "06c0f2a53061c3499fb25c3d919800b2908c65233eb142080e0e4afedd6134b92f6de9bd87ae1941cef57b522963e896b22fca75ea9f6b30df839db2d8b9a6d0",
+    "filename": "docsify-4.13.1.tgz",
+    "sha1_git": "b17e37628b1239676e68f02b857f2bf68eb4e9bb"
+  }
+}],
+"packages": [
+{
+  "purl": "pkg:npm/docsify@4.13.1",
+  "type": "npm",
+  "namespace": "",
+  "name": "docsify",
+  "version": "4.13.1",
+  "qualifiers": "",
+  "subpath": "",
+  "tag": "",
+  "primary_language": "JavaScript",
+  "description": "A magical documentation generator.",
+  "notes": "",
+  "release_date": null,
+  "parties": [
+    {
+      "url": "https://github.com/QingWei-Li",
+      "name": "qingwei-li",
+      "role": "author",
+      "type": "person",
+      "email": "cinwell.li@gmail.com"
+    }
+  ],
+  "keywords": [
+    "doc",
+    "docs",
+    "documentation",
+    "creator",
+    "generator"
+  ],
+  "homepage_url": "https://docsify.js.org",
+  "download_url": "https://registry.npmjs.org/docsify/-/docsify-4.13.1.tgz",
+  "bug_tracking_url": "",
+  "code_view_url": "",
+  "vcs_url": "git+https://github.com/docsifyjs/docsify.git",
+  "repository_homepage_url": "https://www.npmjs.com/package/docsify",
+  "repository_download_url": "https://registry.npmjs.org/docsify/-/docsify-4.13.1.tgz",
+  "api_data_url": "https://registry.npmjs.org/docsify/4.13.1",
+  "size": null,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "copyright": "",
+  "holder": "",
+  "declared_license_expression": "mit",
+  "declared_license_expression_spdx": "MIT",
+  "license_detections": [
+    {
+      "matches": [
+        {
+          "score": 100.0,
+          "matcher": "1-spdx-id",
+          "end_line": 1,
+          "rule_url": null,
+          "from_file": "codebase/package/package.json",
+          "start_line": 1,
+          "matched_text": "MIT",
+          "match_coverage": 100.0,
+          "matched_length": 1,
+          "rule_relevance": 100,
+          "rule_identifier": "spdx-license-identifier-mit-5da48780aba670b0860c46d899ed42a0f243ff06",
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT"
+        }
+      ],
+      "identifier": "mit-a822f434-d61f-f2b1-c792-8b8cb9e7b9bf",
+      "license_expression": "mit",
+      "license_expression_spdx": "MIT"
+    }
+  ],
+  "other_license_expression": "",
+  "other_license_expression_spdx": "",
+  "other_license_detections": [],
+  "extracted_license_statement": "- MIT\n",
+  "compliance_alert": "",
+  "notice_text": "",
+  "source_packages": [],
+  "extra_data": {},
+  "package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "is_private": false,
+  "is_virtual": false,
+  "datasource_ids": [
+    "npm_package_json"
+  ],
+  "datafile_paths": [
+    "package/package.json"
+  ],
+  "file_references": [],
+  "missing_resources": [],
+  "modified_resources": [],
+  "affected_by_vulnerabilities": []
+}],
+"dependencies": [
+{
+  "purl": "pkg:npm/autoprefixer-stylus",
+  "extracted_requirement": "^1.0.0",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/autoprefixer-stylus?uuid=75709ca1-e6c6-467c-a4f4-93e3c63270da",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/axios",
+  "extracted_requirement": "^0.21.1",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/axios?uuid=7fea3608-71f9-4743-80fc-476412d1f986",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/babel-jest",
+  "extracted_requirement": "^27.4.6",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/babel-jest?uuid=9fd51a47-94d4-4ac7-bef0-44e5168e8db3",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/browser-sync",
+  "extracted_requirement": "^2.26.12",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/browser-sync?uuid=e18addef-0dff-454b-b8dc-6bcbbab4813d",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/chokidar",
+  "extracted_requirement": "^3.4.2",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/chokidar?uuid=099a9c7b-fdea-4672-be36-54c8916b9029",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/common-tags",
+  "extracted_requirement": "^1.8.0",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/common-tags?uuid=db5dd70f-e5b9-4b41-8e72-ccd6798a7a78",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/conventional-changelog-cli",
+  "extracted_requirement": "^2.1.0",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/conventional-changelog-cli?uuid=2c289ab4-3b73-4ca0-9361-cb83afa6bd0a",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/copy-dir",
+  "extracted_requirement": "^1.2.0",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/copy-dir?uuid=6d52307e-0f28-4bdf-8307-63e45eab45ac",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/cross-env",
+  "extracted_requirement": "^6.0.3",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/cross-env?uuid=c9e3c1af-e5b4-4ac9-8a98-2c2204797f1a",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/cssnano",
+  "extracted_requirement": "^4.1.10",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/cssnano?uuid=5eb1844e-5676-4737-8274-9b65f32dafdb",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/eslint",
+  "extracted_requirement": "^8.7.0",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/eslint?uuid=90c82209-9447-453d-89b7-9f4b6d8ae69e",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/eslint-config-prettier",
+  "extracted_requirement": "^8.3.0",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/eslint-config-prettier?uuid=6adc6d52-59ce-431b-81be-a98c1b43eb2b",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/eslint-plugin-import",
+  "extracted_requirement": "^2.20.1",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/eslint-plugin-import?uuid=c2ac568b-3a8e-44cd-90d6-9f16be24502c",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/eslint-plugin-jest",
+  "extracted_requirement": "^26.0.0",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/eslint-plugin-jest?uuid=88e30a1f-7cb1-488c-9a1f-557aed61ca60",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/eslint-plugin-playwright",
+  "extracted_requirement": "^0.8.0",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/eslint-plugin-playwright?uuid=d87cc13d-72a7-4e54-80b7-80d9d8a0a5a2",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/eslint-plugin-prettier",
+  "extracted_requirement": "^4.0.0",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/eslint-plugin-prettier?uuid=d5c3b8e5-b225-4ca0-9971-019a652cadd8",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/husky",
+  "extracted_requirement": "^3.1.0",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/husky?uuid=073c43cc-531d-451b-968d-eb5fa01b9bbf",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/jest",
+  "extracted_requirement": "^27.4.7",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/jest?uuid=079682b1-64c2-4c2b-a6bb-821745733b1e",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/lerna",
+  "extracted_requirement": "^5.5.1",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/lerna?uuid=63c9b011-762b-41ab-9a47-8376f5f035c7",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/lint-staged",
+  "extracted_requirement": "^10.4.0",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/lint-staged?uuid=50e8f7a7-3fc0-4f57-a250-4b3cda745b6d",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/live-server",
+  "extracted_requirement": "^1.2.1",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/live-server?uuid=c65cfae5-631d-43e9-8233-4749ac1a28b3",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/marked",
+  "extracted_requirement": "^1.2.9",
+  "scope": "dependencies",
+  "is_runtime": true,
+  "is_optional": false,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/marked?uuid=f2f70875-7952-4ed5-ad97-d3b9d54ba576",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/medium-zoom",
+  "extracted_requirement": "^1.0.6",
+  "scope": "dependencies",
+  "is_runtime": true,
+  "is_optional": false,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/medium-zoom?uuid=3673d988-40a3-46c6-9561-563b0541d576",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/mkdirp",
+  "extracted_requirement": "^0.5.1",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/mkdirp?uuid=0d198a20-79e7-42d5-b725-24141161c5ad",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/npm-run-all",
+  "extracted_requirement": "^4.1.5",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/npm-run-all?uuid=1a569344-f246-4b16-931c-e5667f828c04",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/opencollective-postinstall",
+  "extracted_requirement": "^2.0.2",
+  "scope": "dependencies",
+  "is_runtime": true,
+  "is_optional": false,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/opencollective-postinstall?uuid=d33b90f3-f9b4-4fb3-a4ef-6f0d470eee37",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/prettier",
+  "extracted_requirement": "^2.5.1",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/prettier?uuid=22c5756b-9c1d-433e-aee9-6119d28cf2f3",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/prismjs",
+  "extracted_requirement": "^1.27.0",
+  "scope": "dependencies",
+  "is_runtime": true,
+  "is_optional": false,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/prismjs?uuid=adcb0d46-0b3d-42c8-957d-3a47a4bd5f6a",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/rimraf",
+  "extracted_requirement": "^3.0.0",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/rimraf?uuid=35dd60ae-4fdb-42e2-856d-b97e08beec45",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/rollup",
+  "extracted_requirement": "^1.23.1",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/rollup?uuid=004a68a8-3264-4ec4-a905-5373f4f8ad1c",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/rollup-plugin-async",
+  "extracted_requirement": "^1.2.0",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/rollup-plugin-async?uuid=44069f5a-7003-44e8-83b5-226b6abdd591",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/rollup-plugin-buble",
+  "extracted_requirement": "^0.19.8",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/rollup-plugin-buble?uuid=1f53f0d5-9dec-4b04-94fc-ab9e5f0dbe15",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/rollup-plugin-commonjs",
+  "extracted_requirement": "^10.1.0",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/rollup-plugin-commonjs?uuid=9ba5b27f-1929-4902-a66a-00a150330178",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/rollup-plugin-node-resolve",
+  "extracted_requirement": "^5.2.0",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/rollup-plugin-node-resolve?uuid=0b1db9d2-8ea7-4a6c-9eaf-c4c4191b8e9d",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/rollup-plugin-replace",
+  "extracted_requirement": "^2.2.0",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/rollup-plugin-replace?uuid=16de233c-3c0a-4ef9-866e-c69a526817de",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/rollup-plugin-uglify",
+  "extracted_requirement": "^6.0.4",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/rollup-plugin-uglify?uuid=cc7bc68a-f549-4794-96ff-9ce7f9bcd64f",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/serve-handler",
+  "extracted_requirement": "^6.1.2",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/serve-handler?uuid=dfa057fe-b8ef-49d3-8f2d-9935432afb19",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/strip-indent",
+  "extracted_requirement": "^3.0.0",
+  "scope": "dependencies",
+  "is_runtime": true,
+  "is_optional": false,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/strip-indent?uuid=6a0156db-3578-49ff-ad92-487680344b0d",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/stylus",
+  "extracted_requirement": "^0.54.5",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/stylus?uuid=53cf48d0-a07e-47fa-88d8-699f0a717238",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/tinydate",
+  "extracted_requirement": "^1.3.0",
+  "scope": "dependencies",
+  "is_runtime": true,
+  "is_optional": false,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/tinydate?uuid=97189b4e-5c91-4094-97ee-0623fc6e51e7",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/tweezer.js",
+  "extracted_requirement": "^1.4.0",
+  "scope": "dependencies",
+  "is_runtime": true,
+  "is_optional": false,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/tweezer.js?uuid=2a8da407-891c-4a7d-856e-18c349d71e6c",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/vue",
+  "extracted_requirement": "^2.6.12",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/vue?uuid=bd46393e-1c4d-4a4d-ab63-f3a52346ea15",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/vue",
+  "extracted_requirement": "^3.0.0",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/vue?uuid=fccd1f76-0017-455e-96ce-da1a1b3529c6",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/xhr-mock",
+  "extracted_requirement": "^2.5.1",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/xhr-mock?uuid=36837059-9acd-4270-9e70-c6b66260d3e8",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/%40babel/core",
+  "extracted_requirement": "^7.11.6",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/%40babel/core?uuid=f32097c6-47a8-4458-ac87-732c1f3e9bd4",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/%40babel/eslint-parser",
+  "extracted_requirement": "^7.16.5",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/%40babel/eslint-parser?uuid=b8a6e5a6-90d0-493f-a2ea-3804988c72b3",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/%40babel/preset-env",
+  "extracted_requirement": "^7.11.5",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/%40babel/preset-env?uuid=753f594e-2f9e-4f81-9f85-8fa552a603e9",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+},
+{
+  "purl": "pkg:npm/%40playwright/test",
+  "extracted_requirement": "^1.18.1",
+  "scope": "devDependencies",
+  "is_runtime": false,
+  "is_optional": true,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/%40playwright/test?uuid=5df73bda-b1a3-4012-8283-313af5ae58fc",
+  "for_package_uid": "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+}],
+"files": [
+{
+  "path": "package",
+  "type": "directory",
+  "name": "package",
+  "status": "",
+  "tag": "",
+  "extension": "",
+  "size": 0,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": true,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "package/CHANGELOG.md",
+  "type": "file",
+  "name": "CHANGELOG.md",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".md",
+  "size": 62292,
+  "md5": "1ab1c36c2da3ec2398e432653be212b6",
+  "sha1": "937b03e4ae38a866cd60e090e3a2384f4ecb0873",
+  "sha256": "1acf4fa52483ac55a66c484b5e1d9250f70c6f07de4da8b2e4ee1d50b3ddf211",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text, with very long lines",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": true,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://github.com/docsifyjs/docsify/compare/v4.13.0...v4.13.1",
+      "end_line": 1,
+      "start_line": 1
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/2093",
+      "end_line": 6,
+      "start_line": 6
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/commit/6a7d15b1d5b93e19d3cf9a328cdbf5f1a166b5bd",
+      "end_line": 6,
+      "start_line": 6
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/1967",
+      "end_line": 7,
+      "start_line": 7
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/commit/2312feef459211a8bcdcbf9164a9ffe051609b70",
+      "end_line": 7,
+      "start_line": 7
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/1933",
+      "end_line": 8,
+      "start_line": 8
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/commit/68d873587c29d694ece466177984aa5fd739dd4b",
+      "end_line": 8,
+      "start_line": 8
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/compare/v4.12.4...v4.13.0",
+      "end_line": 12,
+      "start_line": 12
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/1814",
+      "end_line": 17,
+      "start_line": 17
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/commit/54cc5f939b9499ae56604f589eef4e3f1c13cdc5",
+      "end_line": 17,
+      "start_line": 17
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/1722",
+      "end_line": 18,
+      "start_line": 18
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/commit/719dcbea5cb0c8b0835f8e9fc473b094feecb7ec",
+      "end_line": 18,
+      "start_line": 18
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/1744",
+      "end_line": 19,
+      "start_line": 19
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/commit/301b5169613e95765eda335a4b21d0f9f9cbbbfd",
+      "end_line": 19,
+      "start_line": 19
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/381",
+      "end_line": 19,
+      "start_line": 19
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/1909",
+      "end_line": 20,
+      "start_line": 20
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/commit/d27af3dd09a882fce4f1e2774065de57a3501858",
+      "end_line": 20,
+      "start_line": 20
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/1872",
+      "end_line": 21,
+      "start_line": 21
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/commit/9832805681cc6099e9c78deecf6dc0c6fb61fd9b",
+      "end_line": 21,
+      "start_line": 21
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/1878",
+      "end_line": 22,
+      "start_line": 22
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/commit/9b74744299ece0108573a142e5a2e949dc569254",
+      "end_line": 22,
+      "start_line": 22
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/1847",
+      "end_line": 23,
+      "start_line": 23
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/commit/3c9b3d9702bb05a5ff45a4ce4233e144cf1ebecb",
+      "end_line": 23,
+      "start_line": 23
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/1823",
+      "end_line": 23,
+      "start_line": 23
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/1743",
+      "end_line": 24,
+      "start_line": 24
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/commit/fa6df6d58487ec294e22be04ac159dfb5745bd66",
+      "end_line": 24,
+      "start_line": 24
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/1756",
+      "end_line": 25,
+      "start_line": 25
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/commit/2dc5b12b715e3ad1922a6401e3fd9837a99ef9c0",
+      "end_line": 25,
+      "start_line": 25
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/1715",
+      "end_line": 26,
+      "start_line": 26
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/commit/c1227b22cb8a3fb6c362ca8ac109082ab2251cc3",
+      "end_line": 26,
+      "start_line": 26
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/1766",
+      "end_line": 31,
+      "start_line": 31
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/commit/ba5ee26f00e957b58173f96b1901f6ffd3d8e5f5",
+      "end_line": 31,
+      "start_line": 31
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/1746",
+      "end_line": 32,
+      "start_line": 32
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/commit/35002c92b762f0d12e51582d7de7914fa380596a",
+      "end_line": 32,
+      "start_line": 32
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/779",
+      "end_line": 32,
+      "start_line": 32
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/1742",
+      "end_line": 33,
+      "start_line": 33
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/commit/63b2535a45a98945ec897277f4fbddec2ddba887",
+      "end_line": 33,
+      "start_line": 33
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/compare/v4.12.1...v4.12.2",
+      "end_line": 37,
+      "start_line": 37
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/1551",
+      "end_line": 42,
+      "start_line": 42
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/commit/c24f7f6f0b87a87f6dd3755f69eb0969ebb029c9",
+      "end_line": 42,
+      "start_line": 42
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/commit/ec16e4a9d5718ac4f4c25bb3dcaea3b7551372e0",
+      "end_line": 43,
+      "start_line": 43
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/1568",
+      "end_line": 44,
+      "start_line": 44
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/commit/37d9f0e1214276e93b2a11ed87390aafa1bdbcec",
+      "end_line": 44,
+      "start_line": 44
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/1527",
+      "end_line": 45,
+      "start_line": 45
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/commit/d6df2b85a99371bb9a87402a10dd515bb734182e",
+      "end_line": 45,
+      "start_line": 45
+    },
+    {
+      "url": "https://github.com/github.com/docsifyjs/docsify/pull/1527/issues/issuecomment-793455105",
+      "end_line": 45,
+      "start_line": 45
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/1655",
+      "end_line": 46,
+      "start_line": 46
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/commit/c3cdadc37137edcd9e219359973902d2fc8b66ff",
+      "end_line": 46,
+      "start_line": 46
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/issues/1154",
+      "end_line": 46,
+      "start_line": 46
+    },
+    {
+      "url": "https://github.com/github.com/docsifyjs/docsify/blob/develop/src/core/router/history/html5.js/issues/L25-L27",
+      "end_line": 46,
+      "start_line": 46
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/HISTORY.md",
+  "type": "file",
+  "name": "HISTORY.md",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".md",
+  "size": 20625,
+  "md5": "f52192ac9f752ab80087367258f665d1",
+  "sha1": "6eedf4ce9ddd81548d0d7d73e7dccf45f1b70bda",
+  "sha256": "d96856ff48dceef157d4ed32ac143aef56646730c3eec5e4268aa85d73e62dad",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": true,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://github.com/QingWei-Li/docsify/compare/v3.7.2...v3.7.3",
+      "end_line": 3,
+      "start_line": 3
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/commit/eca3368",
+      "end_line": 8,
+      "start_line": 8
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/compare/v3.7.1...v3.7.2",
+      "end_line": 13,
+      "start_line": 13
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/compare/v3.7.0...v3.7.1",
+      "end_line": 18,
+      "start_line": 18
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/commit/b2b4742",
+      "end_line": 23,
+      "start_line": 23
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/compare/v3.6.6...v3.7.0",
+      "end_line": 28,
+      "start_line": 28
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/issues/158",
+      "end_line": 33,
+      "start_line": 33
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/commit/d2be5ae",
+      "end_line": 33,
+      "start_line": 33
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/issues/149",
+      "end_line": 34,
+      "start_line": 34
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/commit/2d73285",
+      "end_line": 34,
+      "start_line": 34
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/compare/v3.6.5...v3.6.6",
+      "end_line": 39,
+      "start_line": 39
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/issues/156",
+      "end_line": 44,
+      "start_line": 44
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/commit/da75d70",
+      "end_line": 44,
+      "start_line": 44
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/compare/v3.6.4...v3.6.5",
+      "end_line": 49,
+      "start_line": 49
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/issues/154",
+      "end_line": 54,
+      "start_line": 54
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/commit/51832d3",
+      "end_line": 54,
+      "start_line": 54
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/compare/v3.6.3...v3.6.4",
+      "end_line": 59,
+      "start_line": 59
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/issues/153",
+      "end_line": 64,
+      "start_line": 64
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/commit/76c041a",
+      "end_line": 64,
+      "start_line": 64
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/compare/v3.6.2...v3.6.3",
+      "end_line": 69,
+      "start_line": 69
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/commit/2653849",
+      "end_line": 74,
+      "start_line": 74
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/compare/v3.6.0...v3.6.2",
+      "end_line": 79,
+      "start_line": 79
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/commit/9b7e5f5",
+      "end_line": 84,
+      "start_line": 84
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/issues/146",
+      "end_line": 85,
+      "start_line": 85
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/commit/94d6603",
+      "end_line": 85,
+      "start_line": 85
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/compare/v3.5.2...v3.6.0",
+      "end_line": 90,
+      "start_line": 90
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/issues/125",
+      "end_line": 95,
+      "start_line": 95
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/issues/124",
+      "end_line": 95,
+      "start_line": 95
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/issues/145",
+      "end_line": 95,
+      "start_line": 95
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/commit/9220523",
+      "end_line": 95,
+      "start_line": 95
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/compare/v3.5.1...v3.5.2",
+      "end_line": 100,
+      "start_line": 100
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/compare/v3.5.0...v3.5.1",
+      "end_line": 105,
+      "start_line": 105
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/commit/594299f",
+      "end_line": 110,
+      "start_line": 110
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/compare/v3.4.4...v3.5.0",
+      "end_line": 115,
+      "start_line": 115
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/commit/bf35471",
+      "end_line": 120,
+      "start_line": 120
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/commit/b022aaf",
+      "end_line": 121,
+      "start_line": 121
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/commit/8f11653",
+      "end_line": 126,
+      "start_line": 126
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/compare/v3.4.3...v3.4.4",
+      "end_line": 131,
+      "start_line": 131
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/commit/2d6a51b",
+      "end_line": 136,
+      "start_line": 136
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/compare/v3.4.2...v3.4.3",
+      "end_line": 141,
+      "start_line": 141
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/compare/v3.4.1...v3.4.2",
+      "end_line": 146,
+      "start_line": 146
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/commit/3aef37a",
+      "end_line": 151,
+      "start_line": 151
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/compare/v3.4.0...v3.4.1",
+      "end_line": 156,
+      "start_line": 156
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/issues/119",
+      "end_line": 161,
+      "start_line": 161
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/commit/b9a7275",
+      "end_line": 161,
+      "start_line": 161
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/compare/v3.3.0...v3.4.0",
+      "end_line": 166,
+      "start_line": 166
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/commit/50fa6fc",
+      "end_line": 171,
+      "start_line": 171
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/compare/v3.2.0...v3.3.0",
+      "end_line": 176,
+      "start_line": 176
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/compare/v3.1.2...v3.2.0",
+      "end_line": 181,
+      "start_line": 181
+    },
+    {
+      "url": "https://github.com/QingWei-Li/docsify/issues/100",
+      "end_line": 186,
+      "start_line": 186
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/lib",
+  "type": "directory",
+  "name": "lib",
+  "status": "application-package",
+  "tag": "",
+  "extension": "",
+  "size": 0,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": true,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/docsify.js",
+  "type": "file",
+  "name": "docsify.js",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".js",
+  "size": 329602,
+  "md5": "b091a718b2d1eabf9331dff94d07662c",
+  "sha1": "97a92eb6bf906e871c6f89d8e06a7a360d6075ba",
+  "sha256": "996922d2c09c2d0bf444b37a63dc8a4b916f48d4c564b4b8bd10ea05907cbf36",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "UTF-8 Unicode text, with very long lines",
+  "programming_language": "JavaScript",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "mit",
+  "detected_license_expression_spdx": "MIT",
+  "license_detections": [
+    {
+      "matches": [
+        {
+          "score": 38.0,
+          "matcher": "2-aho",
+          "end_line": 6323,
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_1331.RULE",
+          "from_file": "codebase/package/lib/docsify.js",
+          "start_line": 6323,
+          "matched_text": "license MIT <https://opensource.org/licenses/MIT>",
+          "match_coverage": 100.0,
+          "matched_length": 7,
+          "rule_relevance": 38,
+          "rule_identifier": "mit_1331.RULE",
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT"
+        }
+      ],
+      "identifier": "mit-020e6676-1990-164d-15bc-ecf90bb0f0d2",
+      "license_expression": "mit",
+      "license_expression_spdx": "MIT"
+    }
+  ],
+  "license_clues": [],
+  "percentage_of_license_text": 0.02,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [
+    {
+      "author": "Lea Verou https://lea.verou.me",
+      "end_line": 6324,
+      "start_line": 6324
+    }
+  ],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://github.com/MoOx/pjax/blob/master/lib/is-supported.js",
+      "end_line": 113,
+      "start_line": 113
+    },
+    {
+      "url": "https://github.com/defunkt/jquery-pjax",
+      "end_line": 118,
+      "start_line": 118
+    },
+    {
+      "url": "https://github.com/bendrucker/document-ready/blob/master/index.js",
+      "end_line": 234,
+      "start_line": 234
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/pull/1372",
+      "end_line": 372,
+      "start_line": 372
+    },
+    {
+      "url": "https://github.com/vuejs/vuejs.org/blob/master/themes/vue/source/js/common.js#L282-L297",
+      "end_line": 1329,
+      "start_line": 1329
+    },
+    {
+      "url": "https://tools.ietf.org/html/rfc3986#section-3",
+      "end_line": 1564,
+      "start_line": 1564
+    },
+    {
+      "url": "https://marked.js.org/#/USING_ADVANCED.md#options",
+      "end_line": 1693,
+      "start_line": 1693
+    },
+    {
+      "url": "https://stackoverflow.com/a/5450113/806777",
+      "end_line": 1697,
+      "start_line": 1697
+    },
+    {
+      "url": "https://github.com/markedjs/marked",
+      "end_line": 3908,
+      "start_line": 3908
+    },
+    {
+      "url": "https://github.com/",
+      "end_line": 4095,
+      "start_line": 4095
+    },
+    {
+      "url": "https://github.com/killercup/grock/blob/5280ae63e16c5739e9233d9009bc235ed7d79a50/styles/solarized/assets/js/behavior.coffee#L54-L81",
+      "end_line": 4195,
+      "start_line": 4195
+    },
+    {
+      "url": "https://github.githubassets.com/images/icons/emoji/",
+      "end_line": 4267,
+      "start_line": 4267
+    },
+    {
+      "url": "https://about.gitlab.com/blog/2018/05/30/journey-in-native-unicode-emoji/#emoji-made-up-of-multiple-characters",
+      "end_line": 6162,
+      "start_line": 6162
+    },
+    {
+      "url": "https://opensource.org/licenses/MIT",
+      "end_line": 6323,
+      "start_line": 6323
+    },
+    {
+      "url": "https://lea.verou.me/",
+      "end_line": 6324,
+      "start_line": 6324
+    },
+    {
+      "url": "https://prismjs.com/faq.html#why-is-asynchronous-highlighting-disabled-by-default",
+      "end_line": 6861,
+      "start_line": 6861
+    },
+    {
+      "url": "https://prismjs.com/download.html",
+      "end_line": 6865,
+      "start_line": 6865
+    },
+    {
+      "url": "https://github.com/PrismJS/prism/issues/2102",
+      "end_line": 7499,
+      "start_line": 7499
+    },
+    {
+      "url": "https://www.w3.org/TR/xml/#NT-doctypedecl",
+      "end_line": 7589,
+      "start_line": 7589
+    },
+    {
+      "url": "https://drafts.csswg.org/css-values-3/#urls",
+      "end_line": 7794,
+      "start_line": 7794
+    },
+    {
+      "url": "http://stackoverflow.com/a/2008444",
+      "end_line": 7895,
+      "start_line": 7895
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/Events#Standard_events",
+      "end_line": 8041,
+      "start_line": 8041
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Element/matches#Polyfill",
+      "end_line": 8061,
+      "start_line": 8061
+    },
+    {
+      "url": "https://github.com/markedjs/marked#overriding-renderer-methods",
+      "end_line": 8702,
+      "start_line": 8702
+    },
+    {
+      "url": "https://foo.com/#//bar.com/file.md",
+      "end_line": 9622,
+      "start_line": 9622
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/docsify.min.js",
+  "type": "file",
+  "name": "docsify.min.js",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".js",
+  "size": 160920,
+  "md5": "b36fc22c95c1ac7584cdc453087c7406",
+  "sha1": "4576a4d74296a74dcf001767640b1fbecc5fc238",
+  "sha256": "9123f808d3f6ad736b4a8f99944a611f87c5d4f9328030080a5c029ed5f450a5",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "UTF-8 Unicode text, with very long lines",
+  "programming_language": "JavaScript",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://marked.js.org/#/USING_ADVANCED.md#options",
+      "end_line": 1,
+      "start_line": 1
+    },
+    {
+      "url": "https://github.com/markedjs/marked",
+      "end_line": 1,
+      "start_line": 1
+    },
+    {
+      "url": "https://github.githubassets.com/images/icons/emoji/",
+      "end_line": 1,
+      "start_line": 1
+    },
+    {
+      "url": "https://github.com/",
+      "end_line": 1,
+      "start_line": 1
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/plugins",
+  "type": "directory",
+  "name": "plugins",
+  "status": "application-package",
+  "tag": "",
+  "extension": "",
+  "size": 0,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/plugins/disqus.js",
+  "type": "file",
+  "name": "disqus.js",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".js",
+  "size": 1581,
+  "md5": "c484fafc90f2d0039095c99af7866db9",
+  "sha1": "302ba3aab46b74e6bdca56fd38fe31e13ea93cc1",
+  "sha256": "d921731e334b3ecaa3a75d33406d9f7d9fe6dcb603a0b9bf2e9ab51864021c91",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "JavaScript",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/plugins/disqus.min.js",
+  "type": "file",
+  "name": "disqus.min.js",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".js",
+  "size": 953,
+  "md5": "eaa254ee4d59172a64b1bf92c7e2362e",
+  "sha1": "b9d8e33306f72e3d56c327409bb2119efba52550",
+  "sha256": "57e92468860cb2884d9b482dfe0e0510d537050adb3a71242bc7bd7c8bbb2353",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text, with very long lines",
+  "programming_language": "JavaScript",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/plugins/emoji.js",
+  "type": "file",
+  "name": "emoji.js",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".js",
+  "size": 86503,
+  "md5": "6a239b1d0fca07ad38570177cd94f1e6",
+  "sha1": "cf7b7fac248cb97e46e72d441d073cfbadd63895",
+  "sha256": "28218a369dbf61e9102c1a8b39a97ed7153e4f2107b1eb668e59e0f5e19b4490",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "JavaScript",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://github.githubassets.com/images/icons/emoji/",
+      "end_line": 9,
+      "start_line": 9
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/plugins/emoji.min.js",
+  "type": "file",
+  "name": "emoji.min.js",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".js",
+  "size": 67248,
+  "md5": "275f9cd95ff4b9c7a6cf60a8e2b587b6",
+  "sha1": "84d21033fabd1f99d77d335374a2a5a5f74b0586",
+  "sha256": "7b371005d02795ac6de901cc4c4b2271ae75c33cf9a6b095e495ad8e2ec3e801",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text, with very long lines",
+  "programming_language": "JavaScript",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://github.githubassets.com/images/icons/emoji/",
+      "end_line": 1,
+      "start_line": 1
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/plugins/external-script.js",
+  "type": "file",
+  "name": "external-script.js",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".js",
+  "size": 768,
+  "md5": "230fc5e3d40212e2b3aa72e0549be490",
+  "sha1": "2f5c34191f39b823c85c7d7475cb554836079d92",
+  "sha256": "80b660c480816a422bf42e9f986bf006e03cefd68c2146d0ea516c4512bb7d87",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "JavaScript",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/plugins/external-script.min.js",
+  "type": "file",
+  "name": "external-script.min.js",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".js",
+  "size": 406,
+  "md5": "e80df0c62a769b5261f709720aecc8fb",
+  "sha1": "2454c96d1587adf64ca6e8f5f227a2d9e8c8bebf",
+  "sha256": "15839fefced4f10fa5dac2a68b32b511c03bf50fca767231e5ab3b8da56b2d81",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text, with very long lines",
+  "programming_language": "JavaScript",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/plugins/front-matter.js",
+  "type": "file",
+  "name": "front-matter.js",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".js",
+  "size": 14644,
+  "md5": "9bdc990b7e05b10ec1cbfc4aa3bab262",
+  "sha1": "494fdb91553c4c366248f70fbb1dad61c1bb9f2d",
+  "sha256": "ef5203ee5e619d460349bc12650b266d1f86dfc4d2e49be1c99fe7aa0948a509",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "JavaScript",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "mit",
+  "detected_license_expression_spdx": "MIT",
+  "license_detections": [
+    {
+      "matches": [
+        {
+          "score": 100.0,
+          "matcher": "2-aho",
+          "end_line": 9,
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_384.RULE",
+          "from_file": "codebase/package/lib/plugins/front-matter.js",
+          "start_line": 9,
+          "matched_text": "  This program is released under the MIT License as follows:",
+          "match_coverage": 100.0,
+          "matched_length": 6,
+          "rule_relevance": 100,
+          "rule_identifier": "mit_384.RULE",
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT"
+        },
+        {
+          "score": 100.0,
+          "matcher": "2-aho",
+          "end_line": 25,
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/mit.LICENSE",
+          "from_file": "codebase/package/lib/plugins/front-matter.js",
+          "start_line": 11,
+          "matched_text": "  Permission is hereby granted, free of charge, to any person obtaining a copy\n   of this software and associated documentation files (the \"Software\"), to deal\n   in the Software without restriction, including without limitation the rights\n   to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n   copies of the Software, and to permit persons to whom the Software is\n   furnished to do so, subject to the following conditions:\n  The above copyright notice and this permission notice shall be included in\n   all copies or substantial portions of the Software.\n  THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n   LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n   OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\n   THE SOFTWARE.",
+          "match_coverage": 100.0,
+          "matched_length": 161,
+          "rule_relevance": 100,
+          "rule_identifier": "mit.LICENSE",
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT"
+        }
+      ],
+      "identifier": "mit-9ac4d61b-2e8a-e7ea-1b0b-288a9e175759",
+      "license_expression": "mit",
+      "license_expression_spdx": "MIT"
+    }
+  ],
+  "license_clues": [],
+  "percentage_of_license_text": 10.76,
+  "compliance_alert": "",
+  "copyrights": [
+    {
+      "end_line": 10,
+      "copyright": "Copyright (c) 2011 Diogo Costa (costa.h4evr@gmail.com)",
+      "start_line": 10
+    }
+  ],
+  "holders": [
+    {
+      "holder": "Diogo Costa",
+      "end_line": 10,
+      "start_line": 10
+    }
+  ],
+  "authors": [
+    {
+      "author": "Diogo Costa",
+      "end_line": 8,
+      "start_line": 8
+    }
+  ],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [
+    {
+      "email": "costa.h4evr@gmail.com",
+      "end_line": 10,
+      "start_line": 10
+    }
+  ],
+  "urls": [
+    {
+      "url": "https://github.com/egoist/docute/blob/master/src/utils/yaml.js",
+      "end_line": 3,
+      "start_line": 3
+    },
+    {
+      "url": "https://github.com/egoist/docute/blob/master/src/utils/front-matter.js",
+      "end_line": 437,
+      "start_line": 437
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/plugins/front-matter.min.js",
+  "type": "file",
+  "name": "front-matter.min.js",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".js",
+  "size": 5030,
+  "md5": "df38bc82147c71e7be697ffbe6cd28f7",
+  "sha1": "8bd85fdbbe41a175b013ae65cf3c9175971c1aa1",
+  "sha256": "51bc6f022bf88a34c4f3b64de04d2ebee0876d4b322b5cdf2c45423b17b3345d",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text, with very long lines",
+  "programming_language": "JavaScript",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/plugins/ga.js",
+  "type": "file",
+  "name": "ga.js",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".js",
+  "size": 970,
+  "md5": "47c23db74e06b3a5cef6e7428ddefd23",
+  "sha1": "d6386e654efcc2687a142a2287dce7222241d694",
+  "sha256": "555a0644c1b871a79763903e2f3e4024de1e8d891ca9652a8c105a0aac02ad09",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "JavaScript",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://github.com/egoist/vue-ga/blob/master/src/index.js",
+      "end_line": 3,
+      "start_line": 3
+    },
+    {
+      "url": "https://www.google-analytics.com/analytics.js",
+      "end_line": 7,
+      "start_line": 7
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/plugins/ga.min.js",
+  "type": "file",
+  "name": "ga.min.js",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".js",
+  "size": 537,
+  "md5": "e267162b2b7bd833e1e0c159673467b5",
+  "sha1": "c7784477c676e52fdb82bc61dd1091b80c94313d",
+  "sha256": "21482e368d13db6bf00305999f3a4507d9d54d8d342143afac1c4ec98fe2dd89",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text, with very long lines",
+  "programming_language": "JavaScript",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://www.google-analytics.com/analytics.js",
+      "end_line": 1,
+      "start_line": 1
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/plugins/gitalk.js",
+  "type": "file",
+  "name": "gitalk.js",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".js",
+  "size": 714,
+  "md5": "c9f826579e5d034ecd8d4c87d6fed32e",
+  "sha1": "42e2f5265907a60ed57e0875842b8913365870dd",
+  "sha256": "8351ce19c81748d9ea83a31eab640f663d42a910ec0c9ca443aa100f194cf851",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "JavaScript",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/plugins/gitalk.min.js",
+  "type": "file",
+  "name": "gitalk.min.js",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".js",
+  "size": 424,
+  "md5": "cd8a717b769dd94a04a235303d6e7ed7",
+  "sha1": "fd6fd95dc9c70aec4cbcbb7d174317917c1c64d4",
+  "sha256": "925d8fe6ee2e0020eebaf83b6f11045a3e6e6c3f0f2a420fb0798526565dacff",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text, with very long lines",
+  "programming_language": "JavaScript",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/plugins/matomo.js",
+  "type": "file",
+  "name": "matomo.js",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".js",
+  "size": 1118,
+  "md5": "ad63a9c5aa6fec3e2a23c3d0974666e5",
+  "sha1": "b090e49bc788b82374865d9167b2ad91159d038d",
+  "sha256": "0e98c1cbda72500c02842a5dc8dca728d6076384cb2ff88d54b0700289cb2541",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "JavaScript",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/plugins/matomo.min.js",
+  "type": "file",
+  "name": "matomo.min.js",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".js",
+  "size": 714,
+  "md5": "06cc448a98903a6e776cf8398f0d3e89",
+  "sha1": "97b47f9e929c9d50c11f07b8cbdd3ccfed0386c7",
+  "sha256": "239e1326ef6e4bb7fa0bdd0c60fa7a78d257dbce7861d902348aa5eb5920eb5c",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text, with very long lines",
+  "programming_language": "JavaScript",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/plugins/search.js",
+  "type": "file",
+  "name": "search.js",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".js",
+  "size": 17088,
+  "md5": "2dd0197ce912849b56dfcd45ef4e036a",
+  "sha1": "af59e59d1b2939459aa93d9c66601799b688c51c",
+  "sha256": "07668f30b65445327121761225ac3569c295371886741c12b0297061e650d9f6",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "exported SGML document, UTF-8 Unicode text, with very long lines",
+  "programming_language": "JavaScript",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://github.com/sindresorhus/escape-string-regexp",
+      "end_line": 230,
+      "start_line": 230
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/plugins/search.min.js",
+  "type": "file",
+  "name": "search.min.js",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".js",
+  "size": 8167,
+  "md5": "8487bc09429fd676399d6d2ec547064c",
+  "sha1": "1fbad2860ee8f40a2516454587fe6f9f66252cbd",
+  "sha256": "ab20792dc69dfd9cdb19479f716f69a619e577dec452739196770134dd71f297",
+  "sha512": "",
+  "mime_type": "text/html",
+  "file_type": "HTML document, UTF-8 Unicode text, with very long lines",
+  "programming_language": "JavaScript",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/plugins/zoom-image.js",
+  "type": "file",
+  "name": "zoom-image.js",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".js",
+  "size": 22110,
+  "md5": "66c023f0d5367b3f5b30d577c7746a03",
+  "sha1": "0d85c9dbf8e05ab36b6b24159e96887f22fd9596",
+  "sha256": "c49259f507d78ace822304474af89ab86483986ebdcd3ee001d99d6d3e077b84",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text, with very long lines",
+  "programming_language": "JavaScript",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "mit",
+  "detected_license_expression_spdx": "MIT",
+  "license_detections": [
+    {
+      "matches": [
+        {
+          "score": 100.0,
+          "matcher": "2-aho",
+          "end_line": 2,
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_14.RULE",
+          "from_file": "codebase/package/lib/plugins/zoom-image.js",
+          "start_line": 2,
+          "matched_text": "MIT License |",
+          "match_coverage": 100.0,
+          "matched_length": 2,
+          "rule_relevance": 100,
+          "rule_identifier": "mit_14.RULE",
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT"
+        }
+      ],
+      "identifier": "mit-9967e727-165e-9bb5-f090-7de5e47a3929",
+      "license_expression": "mit",
+      "license_expression_spdx": "MIT"
+    }
+  ],
+  "license_clues": [],
+  "percentage_of_license_text": 0.1,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://github.com/francoischalifour/medium-zoom",
+      "end_line": 2,
+      "start_line": 2
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/plugins/zoom-image.min.js",
+  "type": "file",
+  "name": "zoom-image.min.js",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".js",
+  "size": 9570,
+  "md5": "fde70dffa0a4dbaf364f5e93b115cb95",
+  "sha1": "540779e6cad6fc66998fcfe9719ed87391a869ec",
+  "sha256": "73e70a64af96532474cb43878ef43ad6e450316e37ebcee96b31e6fe4dc8cd43",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text, with very long lines",
+  "programming_language": "JavaScript",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://github.com/francoischalifour/medium-zoom",
+      "end_line": 1,
+      "start_line": 1
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/themes",
+  "type": "directory",
+  "name": "themes",
+  "status": "application-package",
+  "tag": "",
+  "extension": "",
+  "size": 0,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/themes/buble.css",
+  "type": "file",
+  "name": "buble.css",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".css",
+  "size": 11864,
+  "md5": "a73d944a9be8d71d9b6ac45f2e2e3027",
+  "sha1": "55f4e10d5e48e78f4b59e856a9d8bed393573441",
+  "sha256": "0d262ff0e4aa1b0245a93940ae9348e294e4a2e975e740ecce3893dd90e60ca4",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text, with very long lines, with no line terminators",
+  "programming_language": "CSS",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://fonts.googleapis.com/css?family=Inconsolata%7CInconsolata-Bold",
+      "end_line": 1,
+      "start_line": 1
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/themes/dark.css",
+  "type": "file",
+  "name": "dark.css",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".css",
+  "size": 12782,
+  "md5": "d79896688ac2fcfa190d0b9fcaca85a3",
+  "sha1": "81e615a69de884b7a537834ac60272730fe0e4d6",
+  "sha256": "1c30e3be20bcc7931255a19b55cb6e3ccb0ad9473b2f7df6c4dcaa006bf6dbc0",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text, with very long lines, with no line terminators",
+  "programming_language": "CSS",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://fonts.googleapis.com/css?family=Roboto+Mono%7CSource+Sans+Pro:300,400,600",
+      "end_line": 1,
+      "start_line": 1
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/themes/dolphin.css",
+  "type": "file",
+  "name": "dolphin.css",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".css",
+  "size": 12654,
+  "md5": "190eb2718a642f437448b0da5d28c060",
+  "sha1": "789a1824b8bc1cbb618733970b33244765dcbeda",
+  "sha256": "70db8d21a111485ec15dd9a9e7039801f94fef98c1769784e6cbbd0a000e3955",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text, with very long lines, with no line terminators",
+  "programming_language": "CSS",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://fonts.googleapis.com/css?family=Thasadith:400,400i,700",
+      "end_line": 1,
+      "start_line": 1
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/themes/pure.css",
+  "type": "file",
+  "name": "pure.css",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".css",
+  "size": 8847,
+  "md5": "f0727f68d692ab6adc067fee696ea246",
+  "sha1": "96da2f4fe0e41668db57f03974cfaace3a7a91fe",
+  "sha256": "b83a7e10c5986483bf7c6e346478d12d0e2ec2e9cf82f2f1727e4223e1072e64",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text, with very long lines, with no line terminators",
+  "programming_language": "CSS",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "package/lib/themes/vue.css",
+  "type": "file",
+  "name": "vue.css",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".css",
+  "size": 13061,
+  "md5": "9d192f588e58cfb67f62e02d72257635",
+  "sha1": "1ecac1f04167b4f6d9c83ffa98c660ac39f9eb1e",
+  "sha256": "1f8ddcde10fe1d9f3ab60de8469ed26f9b09716fb882b225d666d4f62838de2e",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text, with very long lines, with no line terminators",
+  "programming_language": "CSS",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://fonts.googleapis.com/css?family=Roboto+Mono%7CSource+Sans+Pro:300,400,600",
+      "end_line": 1,
+      "start_line": 1
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/LICENSE",
+  "type": "file",
+  "name": "LICENSE",
+  "status": "application-package",
+  "tag": "",
+  "extension": "",
+  "size": 1146,
+  "md5": "9508ee8652dae36027f87c8c841f9fe2",
+  "sha1": "9d44ad64ce8aea3e88c338695fc10e2041813a47",
+  "sha256": "65a671d4b5bda281aac624bc6901d8a8c494c15dc3e329760e8652aa0d76519a",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": true,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": true,
+  "is_key_file": true,
+  "detected_license_expression": "mit",
+  "detected_license_expression_spdx": "MIT",
+  "license_detections": [
+    {
+      "matches": [
+        {
+          "score": 100.0,
+          "matcher": "2-aho",
+          "end_line": 1,
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_14.RULE",
+          "from_file": "codebase/package/LICENSE",
+          "start_line": 1,
+          "matched_text": "MIT License",
+          "match_coverage": 100.0,
+          "matched_length": 2,
+          "rule_relevance": 100,
+          "rule_identifier": "mit_14.RULE",
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT"
+        },
+        {
+          "score": 100.0,
+          "matcher": "2-aho",
+          "end_line": 21,
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/licenses/mit.LICENSE",
+          "from_file": "codebase/package/LICENSE",
+          "start_line": 5,
+          "matched_text": "Permission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+          "match_coverage": 100.0,
+          "matched_length": 161,
+          "rule_relevance": 100,
+          "rule_identifier": "mit.LICENSE",
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT"
+        }
+      ],
+      "identifier": "mit-ac40beba-5702-f54d-755f-333441314bb0",
+      "license_expression": "mit",
+      "license_expression_spdx": "MIT"
+    }
+  ],
+  "license_clues": [],
+  "percentage_of_license_text": 92.61,
+  "compliance_alert": "",
+  "copyrights": [
+    {
+      "end_line": 3,
+      "copyright": "Copyright (c) 2016 - present Docsify Contributors (https://github.com/docsifyjs/docsify/graphs/contributors)",
+      "start_line": 3
+    }
+  ],
+  "holders": [
+    {
+      "holder": "Docsify Contributors",
+      "end_line": 3,
+      "start_line": 3
+    }
+  ],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://github.com/docsifyjs/docsify/graphs/contributors",
+      "end_line": 3,
+      "start_line": 3
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/package.json",
+  "type": "file",
+  "name": "package.json",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".json",
+  "size": 4241,
+  "md5": "bcb26d1ae32eaa529e0d9e0d200b16fc",
+  "sha1": "cd100bbae3651efc044458910a11f36b6c05cb0d",
+  "sha256": "e41cfa3763f45ddd2b6d266fc18f0145525cfa852799c283ee57918005b329ac",
+  "sha512": "",
+  "mime_type": "application/json",
+  "file_type": "JSON data",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "mit",
+  "detected_license_expression_spdx": "MIT",
+  "license_detections": [
+    {
+      "matches": [
+        {
+          "score": 100.0,
+          "matcher": "2-aho",
+          "end_line": 11,
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_30.RULE",
+          "from_file": "codebase/package/package.json",
+          "start_line": 11,
+          "matched_text": "  \"license\": \"MIT\",",
+          "match_coverage": 100.0,
+          "matched_length": 2,
+          "rule_relevance": 100,
+          "rule_identifier": "mit_30.RULE",
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT"
+        }
+      ],
+      "identifier": "mit-3fce6ea2-8abd-6c6b-3ede-a37af7c6efee",
+      "license_expression": "mit",
+      "license_expression_spdx": "MIT"
+    }
+  ],
+  "license_clues": [],
+  "percentage_of_license_text": 0.34,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [
+    {
+      "md5": null,
+      "name": "docsify",
+      "purl": "pkg:npm/docsify@4.13.1",
+      "sha1": null,
+      "size": null,
+      "type": "npm",
+      "holder": null,
+      "sha256": null,
+      "sha512": null,
+      "parties": [
+        {
+          "url": "https://github.com/QingWei-Li",
+          "name": "qingwei-li",
+          "role": "author",
+          "type": "person",
+          "email": "cinwell.li@gmail.com"
+        }
+      ],
+      "subpath": null,
+      "vcs_url": "git+https://github.com/docsifyjs/docsify.git",
+      "version": "4.13.1",
+      "keywords": [
+        "doc",
+        "docs",
+        "documentation",
+        "creator",
+        "generator"
+      ],
+      "copyright": null,
+      "namespace": null,
+      "extra_data": {},
+      "is_private": false,
+      "is_virtual": false,
+      "qualifiers": {},
+      "description": "A magical documentation generator.",
+      "notice_text": null,
+      "api_data_url": "https://registry.npmjs.org/docsify/4.13.1",
+      "dependencies": [
+        {
+          "purl": "pkg:npm/marked",
+          "scope": "dependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": true,
+          "is_optional": false,
+          "resolved_package": {},
+          "extracted_requirement": "^1.2.9"
+        },
+        {
+          "purl": "pkg:npm/medium-zoom",
+          "scope": "dependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": true,
+          "is_optional": false,
+          "resolved_package": {},
+          "extracted_requirement": "^1.0.6"
+        },
+        {
+          "purl": "pkg:npm/opencollective-postinstall",
+          "scope": "dependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": true,
+          "is_optional": false,
+          "resolved_package": {},
+          "extracted_requirement": "^2.0.2"
+        },
+        {
+          "purl": "pkg:npm/prismjs",
+          "scope": "dependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": true,
+          "is_optional": false,
+          "resolved_package": {},
+          "extracted_requirement": "^1.27.0"
+        },
+        {
+          "purl": "pkg:npm/strip-indent",
+          "scope": "dependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": true,
+          "is_optional": false,
+          "resolved_package": {},
+          "extracted_requirement": "^3.0.0"
+        },
+        {
+          "purl": "pkg:npm/tinydate",
+          "scope": "dependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": true,
+          "is_optional": false,
+          "resolved_package": {},
+          "extracted_requirement": "^1.3.0"
+        },
+        {
+          "purl": "pkg:npm/tweezer.js",
+          "scope": "dependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": true,
+          "is_optional": false,
+          "resolved_package": {},
+          "extracted_requirement": "^1.4.0"
+        },
+        {
+          "purl": "pkg:npm/%40babel/core",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^7.11.6"
+        },
+        {
+          "purl": "pkg:npm/%40babel/eslint-parser",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^7.16.5"
+        },
+        {
+          "purl": "pkg:npm/%40babel/preset-env",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^7.11.5"
+        },
+        {
+          "purl": "pkg:npm/%40playwright/test",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^1.18.1"
+        },
+        {
+          "purl": "pkg:npm/autoprefixer-stylus",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^1.0.0"
+        },
+        {
+          "purl": "pkg:npm/axios",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^0.21.1"
+        },
+        {
+          "purl": "pkg:npm/babel-jest",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^27.4.6"
+        },
+        {
+          "purl": "pkg:npm/browser-sync",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^2.26.12"
+        },
+        {
+          "purl": "pkg:npm/chokidar",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^3.4.2"
+        },
+        {
+          "purl": "pkg:npm/common-tags",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^1.8.0"
+        },
+        {
+          "purl": "pkg:npm/conventional-changelog-cli",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^2.1.0"
+        },
+        {
+          "purl": "pkg:npm/copy-dir",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^1.2.0"
+        },
+        {
+          "purl": "pkg:npm/cross-env",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^6.0.3"
+        },
+        {
+          "purl": "pkg:npm/cssnano",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^4.1.10"
+        },
+        {
+          "purl": "pkg:npm/eslint",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^8.7.0"
+        },
+        {
+          "purl": "pkg:npm/eslint-config-prettier",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^8.3.0"
+        },
+        {
+          "purl": "pkg:npm/eslint-plugin-import",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^2.20.1"
+        },
+        {
+          "purl": "pkg:npm/eslint-plugin-jest",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^26.0.0"
+        },
+        {
+          "purl": "pkg:npm/eslint-plugin-playwright",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^0.8.0"
+        },
+        {
+          "purl": "pkg:npm/eslint-plugin-prettier",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^4.0.0"
+        },
+        {
+          "purl": "pkg:npm/husky",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^3.1.0"
+        },
+        {
+          "purl": "pkg:npm/jest",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^27.4.7"
+        },
+        {
+          "purl": "pkg:npm/lerna",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^5.5.1"
+        },
+        {
+          "purl": "pkg:npm/lint-staged",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^10.4.0"
+        },
+        {
+          "purl": "pkg:npm/live-server",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^1.2.1"
+        },
+        {
+          "purl": "pkg:npm/mkdirp",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^0.5.1"
+        },
+        {
+          "purl": "pkg:npm/npm-run-all",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^4.1.5"
+        },
+        {
+          "purl": "pkg:npm/prettier",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^2.5.1"
+        },
+        {
+          "purl": "pkg:npm/rimraf",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^3.0.0"
+        },
+        {
+          "purl": "pkg:npm/rollup",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^1.23.1"
+        },
+        {
+          "purl": "pkg:npm/rollup-plugin-async",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^1.2.0"
+        },
+        {
+          "purl": "pkg:npm/rollup-plugin-buble",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^0.19.8"
+        },
+        {
+          "purl": "pkg:npm/rollup-plugin-commonjs",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^10.1.0"
+        },
+        {
+          "purl": "pkg:npm/rollup-plugin-node-resolve",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^5.2.0"
+        },
+        {
+          "purl": "pkg:npm/rollup-plugin-replace",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^2.2.0"
+        },
+        {
+          "purl": "pkg:npm/rollup-plugin-uglify",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^6.0.4"
+        },
+        {
+          "purl": "pkg:npm/serve-handler",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^6.1.2"
+        },
+        {
+          "purl": "pkg:npm/stylus",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^0.54.5"
+        },
+        {
+          "purl": "pkg:npm/vue",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^2.6.12"
+        },
+        {
+          "purl": "pkg:npm/vue",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^3.0.0"
+        },
+        {
+          "purl": "pkg:npm/xhr-mock",
+          "scope": "devDependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": false,
+          "is_optional": true,
+          "resolved_package": {},
+          "extracted_requirement": "^2.5.1"
+        }
+      ],
+      "download_url": "https://registry.npmjs.org/docsify/-/docsify-4.13.1.tgz",
+      "homepage_url": "https://docsify.js.org",
+      "release_date": null,
+      "code_view_url": null,
+      "datasource_id": "npm_package_json",
+      "file_references": [],
+      "source_packages": [],
+      "bug_tracking_url": null,
+      "primary_language": "JavaScript",
+      "license_detections": [
+        {
+          "matches": [
+            {
+              "score": 100.0,
+              "matcher": "1-spdx-id",
+              "end_line": 1,
+              "rule_url": null,
+              "from_file": "codebase/package/package.json",
+              "start_line": 1,
+              "matched_text": "MIT",
+              "match_coverage": 100.0,
+              "matched_length": 1,
+              "rule_relevance": 100,
+              "rule_identifier": "spdx-license-identifier-mit-5da48780aba670b0860c46d899ed42a0f243ff06",
+              "license_expression": "mit",
+              "license_expression_spdx": "MIT"
+            }
+          ],
+          "identifier": "mit-a822f434-d61f-f2b1-c792-8b8cb9e7b9bf",
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT"
+        }
+      ],
+      "repository_download_url": "https://registry.npmjs.org/docsify/-/docsify-4.13.1.tgz",
+      "repository_homepage_url": "https://www.npmjs.com/package/docsify",
+      "other_license_detections": [],
+      "other_license_expression": null,
+      "declared_license_expression": "mit",
+      "extracted_license_statement": "- MIT\n",
+      "other_license_expression_spdx": null,
+      "declared_license_expression_spdx": "MIT"
+    }
+  ],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [
+    {
+      "email": "cinwell.li@gmail.com",
+      "end_line": 7,
+      "start_line": 7
+    }
+  ],
+  "urls": [
+    {
+      "url": "https://github.com/QingWei-Li",
+      "end_line": 8,
+      "start_line": 8
+    },
+    {
+      "url": "https://docsify.js.org/",
+      "end_line": 10,
+      "start_line": 10
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify.git",
+      "end_line": 14,
+      "start_line": 14
+    },
+    {
+      "url": "https://opencollective.com/docsify",
+      "end_line": 127,
+      "start_line": 127
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/README.md",
+  "type": "file",
+  "name": "README.md",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".md",
+  "size": 6567,
+  "md5": "d6d15420090826c3cddec1bf8c6b32d5",
+  "sha1": "78452f58714e7373ddd119b08ea439342899095f",
+  "sha256": "b9a4840e21311baafea7dd66f79e0f66461debbdd590c922cf89ef09452346b2",
+  "sha512": "",
+  "mime_type": "text/html",
+  "file_type": "HTML document, UTF-8 Unicode text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": true,
+  "is_top_level": true,
+  "is_key_file": true,
+  "detected_license_expression": "mit",
+  "detected_license_expression_spdx": "MIT",
+  "license_detections": [
+    {
+      "matches": [
+        {
+          "score": 100.0,
+          "matcher": "2-aho",
+          "end_line": 123,
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_31.RULE",
+          "from_file": "codebase/package/README.md",
+          "start_line": 121,
+          "matched_text": "## License\n\n[MIT](LICENSE)",
+          "match_coverage": 100.0,
+          "matched_length": 3,
+          "rule_relevance": 100,
+          "rule_identifier": "mit_31.RULE",
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT"
+        }
+      ],
+      "identifier": "mit-bdcba66f-6e80-f7bd-7994-748183fe5693",
+      "license_expression": "mit",
+      "license_expression_spdx": "MIT"
+    }
+  ],
+  "license_clues": [],
+  "percentage_of_license_text": 0.39,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://docsify.js.org/",
+      "end_line": 2,
+      "start_line": 2
+    },
+    {
+      "url": "https://opencollective.com/docsify/backers/badge.svg?style=flat-square",
+      "end_line": 12,
+      "start_line": 12
+    },
+    {
+      "url": "https://opencollective.com/docsify/sponsors/badge.svg?style=flat-square",
+      "end_line": 14,
+      "start_line": 14
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/actions/workflows/test.yml",
+      "end_line": 15,
+      "start_line": 15
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify/actions/workflows/test.yml/badge.svg",
+      "end_line": 15,
+      "start_line": 15
+    },
+    {
+      "url": "https://www.npmjs.com/package/docsify",
+      "end_line": 16,
+      "start_line": 16
+    },
+    {
+      "url": "https://img.shields.io/npm/v/docsify.svg?style=flat-square",
+      "end_line": 16,
+      "start_line": 16
+    },
+    {
+      "url": "https://github.com/QingWei-Li/donate",
+      "end_line": 17,
+      "start_line": 17
+    },
+    {
+      "url": "https://img.shields.io/badge/$-donate-ff69b4.svg?style=flat-square",
+      "end_line": 17,
+      "start_line": 17
+    },
+    {
+      "url": "https://discord.gg/3NwKFyR",
+      "end_line": 18,
+      "start_line": 18
+    },
+    {
+      "url": "https://img.shields.io/discord/713647066802421792.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2&cacheSeconds=60",
+      "end_line": 18,
+      "start_line": 18
+    },
+    {
+      "url": "https://gitpod.io/#https://github.com/docsifyjs/docsify",
+      "end_line": 19,
+      "start_line": 19
+    },
+    {
+      "url": "https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod",
+      "end_line": 19,
+      "start_line": 19
+    },
+    {
+      "url": "https://opencollective.com/docsify",
+      "end_line": 22,
+      "start_line": 22
+    },
+    {
+      "url": "https://opencollective.com/docsify/order/3254",
+      "end_line": 25,
+      "start_line": 25
+    },
+    {
+      "url": "https://opencollective.com/docsify/tiers/gold-sponsor.svg?avatarHeight=36",
+      "end_line": 26,
+      "start_line": 26
+    },
+    {
+      "url": "https://docsify-preview.vercel.app/",
+      "end_line": 32,
+      "start_line": 32
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify-cli",
+      "end_line": 34,
+      "start_line": 34
+    },
+    {
+      "url": "https://unpkg.com/docsify",
+      "end_line": 35,
+      "start_line": 35
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/docsify",
+      "end_line": 35,
+      "start_line": 35
+    },
+    {
+      "url": "https://cdnjs.com/libraries/docsify",
+      "end_line": 35,
+      "start_line": 35
+    },
+    {
+      "url": "https://github.com/docsifyjs/awesome-docsify",
+      "end_line": 36,
+      "start_line": 36
+    },
+    {
+      "url": "https://github.com/docsifyjs/docsify-ssr-demo",
+      "end_line": 47,
+      "start_line": 47
+    },
+    {
+      "url": "https://docsify.js.org/#/quickstart",
+      "end_line": 52,
+      "start_line": 52
+    },
+    {
+      "url": "https://codesandbox.io/static/img/play-codesandbox.svg",
+      "end_line": 54,
+      "start_line": 54
+    },
+    {
+      "url": "https://codesandbox.io/s/307qqv236",
+      "end_line": 54,
+      "start_line": 54
+    },
+    {
+      "url": "https://github.com/docsifyjs/awesome-docsify#showcase",
+      "end_line": 60,
+      "start_line": 60
+    },
+    {
+      "url": "https://github.com/egoist/docute",
+      "end_line": 66,
+      "start_line": 66
+    },
+    {
+      "url": "https://github.com/docpress/docpress",
+      "end_line": 67,
+      "start_line": 67
+    },
+    {
+      "url": "https://gitpod.io/button/open-in-gitpod.svg",
+      "end_line": 81,
+      "start_line": 81
+    },
+    {
+      "url": "https://opencollective.com/docsify#backers",
+      "end_line": 97,
+      "start_line": 97
+    },
+    {
+      "url": "https://opencollective.com/docsify/backers.svg?width=890",
+      "end_line": 99,
+      "start_line": 99
+    },
+    {
+      "url": "https://opencollective.com/docsify#silver-sponsors",
+      "end_line": 103,
+      "start_line": 103
+    },
+    {
+      "url": "https://opencollective.com/docsify/silver-sponsors/0/website",
+      "end_line": 105,
+      "start_line": 105
+    },
+    {
+      "url": "https://opencollective.com/docsify/silver-sponsors/0/avatar.svg",
+      "end_line": 105,
+      "start_line": 105
+    },
+    {
+      "url": "https://opencollective.com/docsify/silver-sponsors/1/website",
+      "end_line": 106,
+      "start_line": 106
+    },
+    {
+      "url": "https://opencollective.com/docsify/silver-sponsors/1/avatar.svg",
+      "end_line": 106,
+      "start_line": 106
+    },
+    {
+      "url": "https://opencollective.com/docsify/silver-sponsors/2/website",
+      "end_line": 107,
+      "start_line": 107
+    },
+    {
+      "url": "https://opencollective.com/docsify/silver-sponsors/2/avatar.svg",
+      "end_line": 107,
+      "start_line": 107
+    },
+    {
+      "url": "https://opencollective.com/docsify/silver-sponsors/3/website",
+      "end_line": 108,
+      "start_line": 108
+    },
+    {
+      "url": "https://opencollective.com/docsify/silver-sponsors/3/avatar.svg",
+      "end_line": 108,
+      "start_line": 108
+    },
+    {
+      "url": "https://opencollective.com/docsify/silver-sponsors/4/website",
+      "end_line": 109,
+      "start_line": 109
+    },
+    {
+      "url": "https://opencollective.com/docsify/silver-sponsors/4/avatar.svg",
+      "end_line": 109,
+      "start_line": 109
+    },
+    {
+      "url": "https://opencollective.com/docsify/silver-sponsors/5/website",
+      "end_line": 110,
+      "start_line": 110
+    },
+    {
+      "url": "https://opencollective.com/docsify/silver-sponsors/5/avatar.svg",
+      "end_line": 110,
+      "start_line": 110
+    },
+    {
+      "url": "https://opencollective.com/docsify/silver-sponsors/6/website",
+      "end_line": 111,
+      "start_line": 111
+    },
+    {
+      "url": "https://opencollective.com/docsify/silver-sponsors/6/avatar.svg",
+      "end_line": 111,
+      "start_line": 111
+    },
+    {
+      "url": "https://opencollective.com/docsify/silver-sponsors/7/website",
+      "end_line": 112,
+      "start_line": 112
+    },
+    {
+      "url": "https://opencollective.com/docsify/silver-sponsors/7/avatar.svg",
+      "end_line": 112,
+      "start_line": 112
+    },
+    {
+      "url": "https://opencollective.com/docsify/silver-sponsors/8/website",
+      "end_line": 113,
+      "start_line": 113
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/themes",
+  "type": "directory",
+  "name": "themes",
+  "status": "application-package",
+  "tag": "",
+  "extension": "",
+  "size": 0,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": true,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "package/themes/buble.css",
+  "type": "file",
+  "name": "buble.css",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".css",
+  "size": 14970,
+  "md5": "eb8dced296dc9378bc5e4fb3694f5e94",
+  "sha1": "80cf76336e1fe33ac9239749c0a6ccbb21d35b38",
+  "sha256": "c141f05029d326194fbda64454ce7205583b2fad22ed7ed882ab839dffec9e35",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "CSS",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://fonts.googleapis.com/css?family=Inconsolata%7CInconsolata-Bold",
+      "end_line": 1,
+      "start_line": 1
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/themes/dark.css",
+  "type": "file",
+  "name": "dark.css",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".css",
+  "size": 15960,
+  "md5": "fa3901166f0971f42c192d5a2bb3ccc9",
+  "sha1": "b312b7248635d2c88deee11029efdce0f0ba2234",
+  "sha256": "93891296234aa4a0c58b20c1697d3efb793c05262efb6b68e890b5e818f27007",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "CSS",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://fonts.googleapis.com/css?family=Roboto+Mono%7CSource+Sans+Pro:300,400,600",
+      "end_line": 1,
+      "start_line": 1
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/themes/dolphin.css",
+  "type": "file",
+  "name": "dolphin.css",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".css",
+  "size": 15839,
+  "md5": "2488df1a51ae0c549af26afbae0c64a1",
+  "sha1": "49c07eac8c598e007d0be92dbf10cb17235ecbb7",
+  "sha256": "f08d74b9fbd271efdedf6bafaed2607af39c4dfc2e7d1dcddaf550296acd5815",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "CSS",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://fonts.googleapis.com/css?family=Thasadith:400,400i,700",
+      "end_line": 1,
+      "start_line": 1
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/themes/pure.css",
+  "type": "file",
+  "name": "pure.css",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".css",
+  "size": 11178,
+  "md5": "d8170d0936a38bd8cc1b24e3ad8006ff",
+  "sha1": "e37b21f6c429f7b86aee1e17410043ec00d3ebcb",
+  "sha256": "d1fb768802a489547bae69c317c096d3d3e3b3244473bae4bbbee7c082f7fb9f",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "CSS",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "package/themes/vue.css",
+  "type": "file",
+  "name": "vue.css",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".css",
+  "size": 16345,
+  "md5": "e7c5a3c48fe8f5029a9d160484640c02",
+  "sha1": "919007bad10f8e4f0c91379e3d0626a38d35e367",
+  "sha256": "99c6c5296806c5f3a93663ecbc3f47269f1f38ff8d0d8c148c2895b87673d130",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "CSS",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/docsify@4.13.1?uuid=bfab9828-f979-4923-a215-871b68356513"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://fonts.googleapis.com/css?family=Roboto+Mono%7CSource+Sans+Pro:300,400,600",
+      "end_line": 1,
+      "start_line": 1
+    }
+  ],
+  "extra_data": {}
+}],
+"relations": [
+]
+}
