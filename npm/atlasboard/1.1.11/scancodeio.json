@@ -1,0 +1,404 @@
+{
+"headers": [
+{
+  "tool_name": "scanpipe",
+  "tool_version": "v34.0.1",
+  "other_tools": [
+    "pkg:pypi/scancode-toolkit@32.3.0"
+  ],
+  "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+  "uuid": "552dd2f2-54ae-479d-95c3-ca70231ff0b2",
+  "created_date": "2024-12-06T17:53:39.666Z",
+  "notes": "",
+  "settings": {
+    "policies": "",
+    "product_name": "",
+    "product_version": "",
+    "ignored_patterns": null,
+    "attribution_template": "",
+    "ignored_vulnerabilities": null,
+    "ignored_dependency_scopes": null
+  },
+  "input_sources": [
+    {
+      "uuid": "9b85d4b3-5949-45a0-bcb8-3ebbd002a576",
+      "filename": "atlasboard-1.1.11.tgz",
+      "download_url": "https://registry.npmjs.org/atlasboard/-/atlasboard-1.1.11.tgz",
+      "is_uploaded": false,
+      "tag": "",
+      "size": 428,
+      "is_file": true,
+      "exists": true
+    }
+  ],
+  "runs": [
+    {
+      "pipeline_name": "scan_single_package",
+      "status": "success",
+      "description": "Scan a single package archive (or package manifest file).",
+      "selected_groups": [],
+      "selected_steps": null,
+      "uuid": "726ae751-d0d5-4d08-a91f-e06b6dcedad9",
+      "created_date": "2024-12-06T17:53:39.670418Z",
+      "scancodeio_version": "v34.0.1",
+      "task_id": "726ae751-d0d5-4d08-a91f-e06b6dcedad9",
+      "task_start_date": "2024-12-06T17:53:39.688883Z",
+      "task_end_date": "2024-12-06T17:53:40.305832Z",
+      "task_exitcode": 0,
+      "task_output": "",
+      "log": "2024-12-06 17:53:39.691 Pipeline [scan_single_package] starting\n2024-12-06 17:53:39.694 Step [download_missing_inputs] starting\n2024-12-06 17:53:39.698 Fetching input from https://registry.npmjs.org/atlasboard/-/atlasboard-1.1.11.tgz\n2024-12-06 17:53:39.850 Step [download_missing_inputs] completed in 0 seconds\n2024-12-06 17:53:39.856 Step [get_package_input] starting\n2024-12-06 17:53:39.859 Step [get_package_input] completed in 0 seconds\n2024-12-06 17:53:39.863 Step [collect_input_information] starting\n2024-12-06 17:53:39.867 Step [collect_input_information] completed in 0 seconds\n2024-12-06 17:53:39.871 Step [extract_input_to_codebase_directory] starting\n2024-12-06 17:53:39.884 Step [extract_input_to_codebase_directory] completed in 0 seconds\n2024-12-06 17:53:39.887 Step [extract_archives] starting\n2024-12-06 17:53:39.899 Step [extract_archives] completed in 0 seconds\n2024-12-06 17:53:39.903 Step [run_scan] starting\n2024-12-06 17:53:40.210 Step [run_scan] completed in 0 seconds\n2024-12-06 17:53:40.214 Step [load_inventory_from_toolkit_scan] starting\n2024-12-06 17:53:40.252 Step [load_inventory_from_toolkit_scan] completed in 0 seconds\n2024-12-06 17:53:40.257 Step [make_summary_from_scan_results] starting\n2024-12-06 17:53:40.300 Step [make_summary_from_scan_results] completed in 0 seconds\n2024-12-06 17:53:40.304 Pipeline completed in 1 seconds\n",
+      "execution_time": 0
+    },
+    {
+      "pipeline_name": "publish_to_federatedcode",
+      "status": "running",
+      "description": "Publish package scan to FederatedCode.",
+      "selected_groups": [],
+      "selected_steps": null,
+      "uuid": "3a8f796e-cbe9-42e8-9d5a-c3d807798d49",
+      "created_date": "2024-12-06T17:53:58.978933Z",
+      "scancodeio_version": "v34.0.1",
+      "task_id": "3a8f796e-cbe9-42e8-9d5a-c3d807798d49",
+      "task_start_date": "2024-12-06T17:53:58.987938Z",
+      "task_end_date": null,
+      "task_exitcode": null,
+      "task_output": "",
+      "log": "2024-12-06 17:53:58.989 Pipeline [publish_to_federatedcode] starting\n2024-12-06 17:53:58.992 Step [check_federatedcode_eligibility] starting\n2024-12-06 17:53:59.610 Step [check_federatedcode_eligibility] completed in 1 seconds\n2024-12-06 17:53:59.616 Step [get_package_repository] starting\n2024-12-06 17:53:59.619 Step [get_package_repository] completed in 0 seconds\n2024-12-06 17:53:59.624 Step [clone_repository] starting\n2024-12-06 17:54:00.680 Step [clone_repository] completed in 1 seconds\n2024-12-06 17:54:00.684 Step [add_scan_result] starting\n",
+      "execution_time": null
+    }
+  ],
+  "extra_data": {
+    "md5": "5f6dec1114f8db1b51a502d9982221d3",
+    "sha1": "6d57f82affa52f213f40da8e65207067d8ac67b7",
+    "size": 428,
+    "sha256": "6c291ba90dc33786944a8a6d88f162fc60e1dc4cd22c109ed9ce73a742197725",
+    "sha512": "ef908c26282e0580335cc8032dd2dfa30d7fdefb0d44b55a71fc63dd72be8ff9a15cf5e215413ffd73b775407a3b55c6b605cf5c4611e6c19677e853d7526a2b",
+    "filename": "atlasboard-1.1.11.tgz",
+    "sha1_git": "8111dc8ccf0f456c982cebd0a387af9001f4bce2"
+  }
+}],
+"packages": [
+{
+  "purl": "pkg:npm/atlasboard@1.1.11",
+  "type": "npm",
+  "namespace": "",
+  "name": "atlasboard",
+  "version": "1.1.11",
+  "qualifiers": "",
+  "subpath": "",
+  "tag": "",
+  "primary_language": "JavaScript",
+  "description": "This repository has been removed as it does not have any maintainers.",
+  "notes": "",
+  "release_date": null,
+  "parties": [],
+  "keywords": [],
+  "homepage_url": "https://bitbucket.org/atlassian/atlasboard",
+  "download_url": "https://registry.npmjs.org/atlasboard/-/atlasboard-1.1.11.tgz",
+  "bug_tracking_url": "https://bitbucket.org/atlassian/atlasboard/issues",
+  "code_view_url": "",
+  "vcs_url": "git+ssh://git@bitbucket.org/atlassian/atlasboard.git",
+  "repository_homepage_url": "https://www.npmjs.com/package/atlasboard",
+  "repository_download_url": "https://registry.npmjs.org/atlasboard/-/atlasboard-1.1.11.tgz",
+  "api_data_url": "https://registry.npmjs.org/atlasboard/1.1.11",
+  "size": null,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "copyright": "",
+  "holder": "",
+  "declared_license_expression": "isc",
+  "declared_license_expression_spdx": "ISC",
+  "license_detections": [
+    {
+      "matches": [
+        {
+          "score": 100.0,
+          "matcher": "1-spdx-id",
+          "end_line": 1,
+          "rule_url": null,
+          "from_file": "codebase/package/package.json",
+          "start_line": 1,
+          "matched_text": "ISC",
+          "match_coverage": 100.0,
+          "matched_length": 1,
+          "rule_relevance": 100,
+          "rule_identifier": "spdx-license-identifier-isc-9931cb7ad33c2eb18f322c94660b670a84186baa",
+          "license_expression": "isc",
+          "license_expression_spdx": "ISC"
+        }
+      ],
+      "identifier": "isc-6c4320cc-eb5b-3792-8c56-b8565fff1119",
+      "license_expression": "isc",
+      "license_expression_spdx": "ISC"
+    }
+  ],
+  "other_license_expression": "",
+  "other_license_expression_spdx": "",
+  "other_license_detections": [],
+  "extracted_license_statement": "- ISC\n",
+  "compliance_alert": "",
+  "notice_text": "",
+  "source_packages": [],
+  "extra_data": {},
+  "package_uid": "pkg:npm/atlasboard@1.1.11?uuid=de6edce2-ea74-4a4f-a0c5-4a9335e68843",
+  "is_private": false,
+  "is_virtual": false,
+  "datasource_ids": [
+    "npm_package_json"
+  ],
+  "datafile_paths": [
+    "package/package.json"
+  ],
+  "file_references": [],
+  "missing_resources": [],
+  "modified_resources": [],
+  "affected_by_vulnerabilities": []
+}],
+"dependencies": [
+],
+"files": [
+{
+  "path": "package",
+  "type": "directory",
+  "name": "package",
+  "status": "",
+  "tag": "",
+  "extension": "",
+  "size": 0,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": true,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "package/package.json",
+  "type": "file",
+  "name": "package.json",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".json",
+  "size": 542,
+  "md5": "caf8868620d042874361f13a201500c6",
+  "sha1": "101d8acd1fe0a92798b1a787030c4ef65e1836cd",
+  "sha256": "94989e772eb8a376249a97c4dd39783e3c654d761686fdef3fb487c3695811f3",
+  "sha512": "",
+  "mime_type": "application/json",
+  "file_type": "JSON data",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "isc",
+  "detected_license_expression_spdx": "ISC",
+  "license_detections": [
+    {
+      "matches": [
+        {
+          "score": 100.0,
+          "matcher": "2-aho",
+          "end_line": 15,
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/isc_38.RULE",
+          "from_file": "codebase/package/package.json",
+          "start_line": 15,
+          "matched_text": "  \"license\": \"ISC\",",
+          "match_coverage": 100.0,
+          "matched_length": 2,
+          "rule_relevance": 100,
+          "rule_identifier": "isc_38.RULE",
+          "license_expression": "isc",
+          "license_expression_spdx": "ISC"
+        }
+      ],
+      "identifier": "isc-8444467e-911b-70d7-8f49-a86dcf33ac8f",
+      "license_expression": "isc",
+      "license_expression_spdx": "ISC"
+    }
+  ],
+  "license_clues": [],
+  "percentage_of_license_text": 3.39,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [
+    {
+      "author": "license' ISC bugs' url' https://bitbucket.org/atlassian/atlasboard/issues",
+      "end_line": 17,
+      "start_line": 14
+    }
+  ],
+  "package_data": [
+    {
+      "md5": null,
+      "name": "atlasboard",
+      "purl": "pkg:npm/atlasboard@1.1.11",
+      "sha1": null,
+      "size": null,
+      "type": "npm",
+      "holder": null,
+      "sha256": null,
+      "sha512": null,
+      "parties": [],
+      "subpath": null,
+      "vcs_url": "git+ssh://git@bitbucket.org/atlassian/atlasboard.git",
+      "version": "1.1.11",
+      "keywords": [],
+      "copyright": null,
+      "namespace": null,
+      "extra_data": {},
+      "is_private": false,
+      "is_virtual": false,
+      "qualifiers": {},
+      "description": "This repository has been removed as it does not have any maintainers.",
+      "notice_text": null,
+      "api_data_url": "https://registry.npmjs.org/atlasboard/1.1.11",
+      "dependencies": [],
+      "download_url": "https://registry.npmjs.org/atlasboard/-/atlasboard-1.1.11.tgz",
+      "homepage_url": "https://bitbucket.org/atlassian/atlasboard",
+      "release_date": null,
+      "code_view_url": null,
+      "datasource_id": "npm_package_json",
+      "file_references": [],
+      "source_packages": [],
+      "bug_tracking_url": "https://bitbucket.org/atlassian/atlasboard/issues",
+      "primary_language": "JavaScript",
+      "license_detections": [
+        {
+          "matches": [
+            {
+              "score": 100.0,
+              "matcher": "1-spdx-id",
+              "end_line": 1,
+              "rule_url": null,
+              "from_file": "codebase/package/package.json",
+              "start_line": 1,
+              "matched_text": "ISC",
+              "match_coverage": 100.0,
+              "matched_length": 1,
+              "rule_relevance": 100,
+              "rule_identifier": "spdx-license-identifier-isc-9931cb7ad33c2eb18f322c94660b670a84186baa",
+              "license_expression": "isc",
+              "license_expression_spdx": "ISC"
+            }
+          ],
+          "identifier": "isc-6c4320cc-eb5b-3792-8c56-b8565fff1119",
+          "license_expression": "isc",
+          "license_expression_spdx": "ISC"
+        }
+      ],
+      "repository_download_url": "https://registry.npmjs.org/atlasboard/-/atlasboard-1.1.11.tgz",
+      "repository_homepage_url": "https://www.npmjs.com/package/atlasboard",
+      "other_license_detections": [],
+      "other_license_expression": null,
+      "declared_license_expression": "isc",
+      "extracted_license_statement": "- ISC\n",
+      "other_license_expression_spdx": null,
+      "declared_license_expression_spdx": "ISC"
+    }
+  ],
+  "for_packages": [
+    "pkg:npm/atlasboard@1.1.11?uuid=de6edce2-ea74-4a4f-a0c5-4a9335e68843"
+  ],
+  "emails": [
+    {
+      "email": "git@bitbucket.org",
+      "end_line": 11,
+      "start_line": 11
+    }
+  ],
+  "urls": [
+    {
+      "url": "ssh://git@bitbucket.org/atlassian/atlasboard.git",
+      "end_line": 11,
+      "start_line": 11
+    },
+    {
+      "url": "https://bitbucket.org/atlassian/atlasboard/issues",
+      "end_line": 17,
+      "start_line": 17
+    },
+    {
+      "url": "https://bitbucket.org/atlassian/atlasboard",
+      "end_line": 19,
+      "start_line": 19
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/README.md",
+  "type": "file",
+  "name": "README.md",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".md",
+  "size": 84,
+  "md5": "539ece2a8ed2fcd7ce60e63f1a99fa66",
+  "sha1": "3c0e9a41660601c0c21010c3e02a47da134bf6f4",
+  "sha256": "6b2edc17211eb4e95ceaec1cf2d450d4150342c1c15531ba9fce6eb80dd4805e",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": true,
+  "is_top_level": true,
+  "is_key_file": true,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/atlasboard@1.1.11?uuid=de6edce2-ea74-4a4f-a0c5-4a9335e68843"
+  ],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+}],
+"relations": [
+]
+}
