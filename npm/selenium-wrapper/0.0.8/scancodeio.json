@@ -1,0 +1,608 @@
+{
+"headers": [
+{
+  "tool_name": "scanpipe",
+  "tool_version": "v34.0.1",
+  "other_tools": [
+    "pkg:pypi/scancode-toolkit@32.3.0"
+  ],
+  "notice": "Generated with ScanCode.io and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied.\nNo content created from ScanCode.io should be considered or used as legal advice.\nConsult an Attorney for any legal advice.\nScanCode.io is a free software code scanning tool from nexB Inc. and others\nlicensed under the Apache License version 2.0.\nScanCode is a trademark of nexB Inc.\nVisit https://github.com/nexB/scancode.io for support and download.\n",
+  "uuid": "8a618c75-4070-45c2-89a6-cdf507ffb9ca",
+  "created_date": "2024-12-06T17:37:54.069Z",
+  "notes": "",
+  "settings": {
+    "policies": "",
+    "product_name": "",
+    "product_version": "",
+    "ignored_patterns": null,
+    "attribution_template": "",
+    "ignored_vulnerabilities": null,
+    "ignored_dependency_scopes": null
+  },
+  "input_sources": [
+    {
+      "uuid": "b54a61fc-9b6c-415a-b969-a0bef5b769f7",
+      "filename": "selenium-wrapper-0.0.8.tgz",
+      "download_url": "https://registry.npmjs.org/selenium-wrapper/-/selenium-wrapper-0.0.8.tgz",
+      "is_uploaded": false,
+      "tag": "",
+      "size": 2109,
+      "is_file": true,
+      "exists": true
+    }
+  ],
+  "runs": [
+    {
+      "pipeline_name": "scan_single_package",
+      "status": "success",
+      "description": "Scan a single package archive (or package manifest file).",
+      "selected_groups": [],
+      "selected_steps": null,
+      "uuid": "256af86c-749e-44ad-9c18-1a44bb7a2050",
+      "created_date": "2024-12-06T17:37:54.088776Z",
+      "scancodeio_version": "v34.0.1",
+      "task_id": "256af86c-749e-44ad-9c18-1a44bb7a2050",
+      "task_start_date": "2024-12-06T17:37:58.802139Z",
+      "task_end_date": "2024-12-06T17:37:59.301132Z",
+      "task_exitcode": 0,
+      "task_output": "",
+      "log": "2024-12-06 17:37:58.804 Pipeline [scan_single_package] starting\n2024-12-06 17:37:58.807 Step [download_missing_inputs] starting\n2024-12-06 17:37:58.811 Step [download_missing_inputs] completed in 0 seconds\n2024-12-06 17:37:58.813 Step [get_package_input] starting\n2024-12-06 17:37:58.814 Step [get_package_input] completed in 0 seconds\n2024-12-06 17:37:58.816 Step [collect_input_information] starting\n2024-12-06 17:37:58.819 Step [collect_input_information] completed in 0 seconds\n2024-12-06 17:37:58.822 Step [extract_input_to_codebase_directory] starting\n2024-12-06 17:37:58.844 Step [extract_input_to_codebase_directory] completed in 0 seconds\n2024-12-06 17:37:58.847 Step [extract_archives] starting\n2024-12-06 17:37:58.863 Step [extract_archives] completed in 0 seconds\n2024-12-06 17:37:58.864 Step [run_scan] starting\n2024-12-06 17:37:59.257 Step [run_scan] completed in 0 seconds\n2024-12-06 17:37:59.259 Step [load_inventory_from_toolkit_scan] starting\n2024-12-06 17:37:59.286 Step [load_inventory_from_toolkit_scan] completed in 0 seconds\n2024-12-06 17:37:59.287 Step [make_summary_from_scan_results] starting\n2024-12-06 17:37:59.299 Step [make_summary_from_scan_results] completed in 0 seconds\n2024-12-06 17:37:59.300 Pipeline completed in 0 seconds\n",
+      "execution_time": 0
+    },
+    {
+      "pipeline_name": "publish_to_federatedcode",
+      "status": "failure",
+      "description": "Publish package scan to FederatedCode.",
+      "selected_groups": [],
+      "selected_steps": null,
+      "uuid": "012a53a7-ee99-4af9-8824-156e10341e89",
+      "created_date": "2024-12-06T17:37:54.090817Z",
+      "scancodeio_version": "v34.0.1",
+      "task_id": "012a53a7-ee99-4af9-8824-156e10341e89",
+      "task_start_date": "2024-12-06T17:37:59.308661Z",
+      "task_end_date": "2024-12-06T17:38:02.015977Z",
+      "task_exitcode": 1,
+      "task_output": "Cmd('git') failed due to: exit code(128)\n  cmdline: git push origin main --no-verify\n  stderr: 'remote: Permission to aboutcode-org/aboutcode-packages-npm-385.git denied to Mr-Keshav.\nfatal: unable to access 'https://github.com/aboutcode-org/aboutcode-packages-npm-385.git/': The requested URL returned error: 403'\n\nTraceback:\n  File \"/home/kpriyadarshi/Multiverse/scancode.io/aboutcode/pipeline/__init__.py\", line 199, in execute\n    step(self)\n  File \"/home/kpriyadarshi/Multiverse/scancode.io/scanpipe/pipelines/publish_to_federatedcode.py\", line 84, in commit_and_push_changes\n    federatedcode.commit_and_push_changes(\n  File \"/home/kpriyadarshi/Multiverse/scancode.io/scanpipe/pipes/federatedcode.py\", line 185, in commit_and_push_changes\n    repo.git.push(remote_name, default_branch, \"--no-verify\")\n  File \"/home/kpriyadarshi/Multiverse/scancode.io/.venv/lib/python3.10/site-packages/git/cmd.py\", line 986, in <lambda>\n    return lambda *args, **kwargs: self._call_process(name, *args, **kwargs)\n  File \"/home/kpriyadarshi/Multiverse/scancode.io/.venv/lib/python3.10/site-packages/git/cmd.py\", line 1598, in _call_process\n    return self.execute(call, **exec_kwargs)\n  File \"/home/kpriyadarshi/Multiverse/scancode.io/.venv/lib/python3.10/site-packages/git/cmd.py\", line 1388, in execute\n    raise GitCommandError(redacted_command, status, stderr_value, stdout_value)\n",
+      "log": "2024-12-06 17:37:59.309 Pipeline [publish_to_federatedcode] starting\n2024-12-06 17:37:59.310 Step [check_federatedcode_eligibility] starting\n2024-12-06 17:38:00.129 Step [check_federatedcode_eligibility] completed in 1 seconds\n2024-12-06 17:38:00.132 Step [get_package_repository] starting\n2024-12-06 17:38:00.134 Step [get_package_repository] completed in 0 seconds\n2024-12-06 17:38:00.138 Step [clone_repository] starting\n2024-12-06 17:38:01.239 Step [clone_repository] completed in 1 seconds\n2024-12-06 17:38:01.243 Step [add_scan_result] starting\n2024-12-06 17:38:01.291 Step [add_scan_result] completed in 0 seconds\n2024-12-06 17:38:01.292 Step [commit_and_push_changes] starting\n2024-12-06 17:38:02.012 Pipeline failed\n",
+      "execution_time": 2
+    },
+    {
+      "pipeline_name": "publish_to_federatedcode",
+      "status": "running",
+      "description": "Publish package scan to FederatedCode.",
+      "selected_groups": [],
+      "selected_steps": null,
+      "uuid": "5b4ffbe9-c63f-4877-bedb-ccbae5af1721",
+      "created_date": "2024-12-06T17:39:39.852139Z",
+      "scancodeio_version": "v34.0.1",
+      "task_id": "5b4ffbe9-c63f-4877-bedb-ccbae5af1721",
+      "task_start_date": "2024-12-06T17:39:39.868629Z",
+      "task_end_date": null,
+      "task_exitcode": null,
+      "task_output": "",
+      "log": "2024-12-06 17:39:39.870 Pipeline [publish_to_federatedcode] starting\n2024-12-06 17:39:39.875 Step [check_federatedcode_eligibility] starting\n2024-12-06 17:39:40.495 Step [check_federatedcode_eligibility] completed in 1 seconds\n2024-12-06 17:39:40.499 Step [get_package_repository] starting\n2024-12-06 17:39:40.501 Step [get_package_repository] completed in 0 seconds\n2024-12-06 17:39:40.505 Step [clone_repository] starting\n2024-12-06 17:39:41.619 Step [clone_repository] completed in 1 seconds\n2024-12-06 17:39:41.624 Step [add_scan_result] starting\n",
+      "execution_time": null
+    }
+  ],
+  "extra_data": {
+    "md5": "538da44a9f90a92c0d0524195f32941e",
+    "sha1": "d7c541994de6742d742e190d9b99dce56db9ce9f",
+    "size": 2109,
+    "sha256": "6959b9aee18f7e776b2757528b712af45f6ba8f21188abf71fa3801449410369",
+    "sha512": "72c82f5dcf60fdac85a666b7324b09a6e033deb8a3976e230222da3232847ab99c3fca48c6d45b050ac6cac5d0a0225d0ef50eb915ed6bfa39139d0f59156c40",
+    "filename": "selenium-wrapper-0.0.8.tgz",
+    "sha1_git": "bc079d86d9fcea9e612318737fb7ceb138cdaa4a"
+  }
+}],
+"packages": [
+{
+  "purl": "pkg:npm/selenium-wrapper@0.0.8",
+  "type": "npm",
+  "namespace": "",
+  "name": "selenium-wrapper",
+  "version": "0.0.8",
+  "qualifiers": "",
+  "subpath": "",
+  "tag": "",
+  "primary_language": "JavaScript",
+  "description": "A selenium server wrapper, including installation and chrome webdriver",
+  "notes": "",
+  "release_date": null,
+  "parties": [
+    {
+      "url": null,
+      "name": "Arian Stolwijk",
+      "role": "author",
+      "type": "person",
+      "email": null
+    }
+  ],
+  "keywords": [],
+  "homepage_url": "",
+  "download_url": "https://registry.npmjs.org/selenium-wrapper/-/selenium-wrapper-0.0.8.tgz",
+  "bug_tracking_url": "https://github.com/arian/selenium-wrapper/issues",
+  "code_view_url": "",
+  "vcs_url": "git+https://github.com/arian/selenium-wrapper.git",
+  "repository_homepage_url": "https://www.npmjs.com/package/selenium-wrapper",
+  "repository_download_url": "https://registry.npmjs.org/selenium-wrapper/-/selenium-wrapper-0.0.8.tgz",
+  "api_data_url": "https://registry.npmjs.org/selenium-wrapper/0.0.8",
+  "size": null,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "copyright": "",
+  "holder": "",
+  "declared_license_expression": "mit",
+  "declared_license_expression_spdx": "MIT",
+  "license_detections": [
+    {
+      "matches": [
+        {
+          "score": 100.0,
+          "matcher": "1-spdx-id",
+          "end_line": 1,
+          "rule_url": null,
+          "from_file": "codebase/package/package.json",
+          "start_line": 1,
+          "matched_text": "MIT",
+          "match_coverage": 100.0,
+          "matched_length": 1,
+          "rule_relevance": 100,
+          "rule_identifier": "spdx-license-identifier-mit-5da48780aba670b0860c46d899ed42a0f243ff06",
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT"
+        }
+      ],
+      "identifier": "mit-a822f434-d61f-f2b1-c792-8b8cb9e7b9bf",
+      "license_expression": "mit",
+      "license_expression_spdx": "MIT"
+    }
+  ],
+  "other_license_expression": "",
+  "other_license_expression_spdx": "",
+  "other_license_detections": [],
+  "extracted_license_statement": "- MIT\n",
+  "compliance_alert": "",
+  "notice_text": "",
+  "source_packages": [],
+  "extra_data": {},
+  "package_uid": "pkg:npm/selenium-wrapper@0.0.8?uuid=14fd1a8a-1734-470a-b339-eb73a2cdbf45",
+  "is_private": false,
+  "is_virtual": false,
+  "datasource_ids": [
+    "npm_package_json"
+  ],
+  "datafile_paths": [
+    "package/package.json"
+  ],
+  "file_references": [],
+  "missing_resources": [],
+  "modified_resources": [],
+  "affected_by_vulnerabilities": []
+}],
+"dependencies": [
+{
+  "purl": "pkg:npm/adm-zip",
+  "extracted_requirement": "~0.4.3",
+  "scope": "dependencies",
+  "is_runtime": true,
+  "is_optional": false,
+  "is_pinned": false,
+  "is_direct": true,
+  "dependency_uid": "pkg:npm/adm-zip?uuid=88520c81-e879-4a44-8e16-f5500db67714",
+  "for_package_uid": "pkg:npm/selenium-wrapper@0.0.8?uuid=14fd1a8a-1734-470a-b339-eb73a2cdbf45",
+  "resolved_to_package_uid": null,
+  "datafile_path": "package/package.json",
+  "datasource_id": "npm_package_json",
+  "package_type": "npm",
+  "affected_by_vulnerabilities": []
+}],
+"files": [
+{
+  "path": "package",
+  "type": "directory",
+  "name": "package",
+  "status": "",
+  "tag": "",
+  "extension": "",
+  "size": 0,
+  "md5": "",
+  "sha1": "",
+  "sha256": "",
+  "sha512": "",
+  "mime_type": "",
+  "file_type": "",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": false,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": true,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "package/install.js",
+  "type": "file",
+  "name": "install.js",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".js",
+  "size": 3265,
+  "md5": "a8251205a0411b0f94c9fed7c7107a4e",
+  "sha1": "33724d81acbe96fefb8321922ee1602ed0623e43",
+  "sha256": "56b50995da44fd0a1862f700ccae4e8b9f2cf6cc64ffd2b2d2b9096d28316f55",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "JavaScript",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": true,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/selenium-wrapper@0.0.8?uuid=14fd1a8a-1734-470a-b339-eb73a2cdbf45"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "http://selenium-release.storage.googleapis.com/index.html",
+      "end_line": 10,
+      "start_line": 10
+    },
+    {
+      "url": "http://selenium-release.storage.googleapis.com/2.44/selenium-server-standalone-2.44.0.jar",
+      "end_line": 11,
+      "start_line": 11
+    },
+    {
+      "url": "http://chromedriver.storage.googleapis.com/LATEST_RELEASE",
+      "end_line": 13,
+      "start_line": 13
+    },
+    {
+      "url": "http://chromedriver.storage.googleapis.com/2.14/chromedriver",
+      "end_line": 14,
+      "start_line": 14
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/.npmignore",
+  "type": "file",
+  "name": ".npmignore",
+  "status": "application-package",
+  "tag": "",
+  "extension": "",
+  "size": 48,
+  "md5": "cf2cf10c39a3d5036f4e9583de03895e",
+  "sha1": "e2b3330157ebddab709490faef23917b18fb1c71",
+  "sha256": "89f54a08677718d46e21edcb5960c6c9237055e22095326ffc933530e077fc0b",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "GAS",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": true,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/selenium-wrapper@0.0.8?uuid=14fd1a8a-1734-470a-b339-eb73a2cdbf45"
+  ],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+},
+{
+  "path": "package/package.json",
+  "type": "file",
+  "name": "package.json",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".json",
+  "size": 539,
+  "md5": "dca7501f1a3acfa077c8f618b2f43cba",
+  "sha1": "30bad7003e398b9718b971979b2cbd3b3969e1e2",
+  "sha256": "d96655a8e8e0f3a1dce68c8e30bb10fd3769f2e22e618032f2c3f0061e4b0525",
+  "sha512": "",
+  "mime_type": "application/json",
+  "file_type": "JSON data",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": false,
+  "is_key_file": false,
+  "detected_license_expression": "mit",
+  "detected_license_expression_spdx": "MIT",
+  "license_detections": [
+    {
+      "matches": [
+        {
+          "score": 100.0,
+          "matcher": "2-aho",
+          "end_line": 16,
+          "rule_url": "https://github.com/nexB/scancode-toolkit/tree/develop/src/licensedcode/data/rules/mit_30.RULE",
+          "from_file": "codebase/package/package.json",
+          "start_line": 16,
+          "matched_text": "  \"license\": \"MIT\",",
+          "match_coverage": 100.0,
+          "matched_length": 2,
+          "rule_relevance": 100,
+          "rule_identifier": "mit_30.RULE",
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT"
+        }
+      ],
+      "identifier": "mit-3fce6ea2-8abd-6c6b-3ede-a37af7c6efee",
+      "license_expression": "mit",
+      "license_expression_spdx": "MIT"
+    }
+  ],
+  "license_clues": [],
+  "percentage_of_license_text": 3.39,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [
+    {
+      "author": "Arian Stolwijk",
+      "end_line": 15,
+      "start_line": 15
+    }
+  ],
+  "package_data": [
+    {
+      "md5": null,
+      "name": "selenium-wrapper",
+      "purl": "pkg:npm/selenium-wrapper@0.0.8",
+      "sha1": null,
+      "size": null,
+      "type": "npm",
+      "holder": null,
+      "sha256": null,
+      "sha512": null,
+      "parties": [
+        {
+          "url": null,
+          "name": "Arian Stolwijk",
+          "role": "author",
+          "type": "person",
+          "email": null
+        }
+      ],
+      "subpath": null,
+      "vcs_url": "git+https://github.com/arian/selenium-wrapper.git",
+      "version": "0.0.8",
+      "keywords": [],
+      "copyright": null,
+      "namespace": null,
+      "extra_data": {},
+      "is_private": false,
+      "is_virtual": false,
+      "qualifiers": {},
+      "description": "A selenium server wrapper, including installation and chrome webdriver",
+      "notice_text": null,
+      "api_data_url": "https://registry.npmjs.org/selenium-wrapper/0.0.8",
+      "dependencies": [
+        {
+          "purl": "pkg:npm/adm-zip",
+          "scope": "dependencies",
+          "is_direct": true,
+          "is_pinned": false,
+          "extra_data": {},
+          "is_runtime": true,
+          "is_optional": false,
+          "resolved_package": {},
+          "extracted_requirement": "~0.4.3"
+        }
+      ],
+      "download_url": "https://registry.npmjs.org/selenium-wrapper/-/selenium-wrapper-0.0.8.tgz",
+      "homepage_url": null,
+      "release_date": null,
+      "code_view_url": null,
+      "datasource_id": "npm_package_json",
+      "file_references": [],
+      "source_packages": [],
+      "bug_tracking_url": "https://github.com/arian/selenium-wrapper/issues",
+      "primary_language": "JavaScript",
+      "license_detections": [
+        {
+          "matches": [
+            {
+              "score": 100.0,
+              "matcher": "1-spdx-id",
+              "end_line": 1,
+              "rule_url": null,
+              "from_file": "codebase/package/package.json",
+              "start_line": 1,
+              "matched_text": "MIT",
+              "match_coverage": 100.0,
+              "matched_length": 1,
+              "rule_relevance": 100,
+              "rule_identifier": "spdx-license-identifier-mit-5da48780aba670b0860c46d899ed42a0f243ff06",
+              "license_expression": "mit",
+              "license_expression_spdx": "MIT"
+            }
+          ],
+          "identifier": "mit-a822f434-d61f-f2b1-c792-8b8cb9e7b9bf",
+          "license_expression": "mit",
+          "license_expression_spdx": "MIT"
+        }
+      ],
+      "repository_download_url": "https://registry.npmjs.org/selenium-wrapper/-/selenium-wrapper-0.0.8.tgz",
+      "repository_homepage_url": "https://www.npmjs.com/package/selenium-wrapper",
+      "other_license_detections": [],
+      "other_license_expression": null,
+      "declared_license_expression": "mit",
+      "extracted_license_statement": "- MIT\n",
+      "other_license_expression_spdx": null,
+      "declared_license_expression_spdx": "MIT"
+    }
+  ],
+  "for_packages": [
+    "pkg:npm/selenium-wrapper@0.0.8?uuid=14fd1a8a-1734-470a-b339-eb73a2cdbf45"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://github.com/arian/selenium-wrapper.git",
+      "end_line": 19,
+      "start_line": 19
+    },
+    {
+      "url": "https://github.com/arian/selenium-wrapper/issues",
+      "end_line": 22,
+      "start_line": 22
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/README.md",
+  "type": "file",
+  "name": "README.md",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".md",
+  "size": 590,
+  "md5": "584fa28cd5c0fcda3b794b6957d3e39f",
+  "sha1": "363130325b03ff14fc15dd57625ec4cf28bdb41b",
+  "sha256": "472b9ea937fc0574f47ff281e0363df75f67923e0fa5a3145a9c27df587e5cd6",
+  "sha512": "",
+  "mime_type": "text/plain",
+  "file_type": "ASCII text",
+  "programming_language": "",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": true,
+  "is_top_level": true,
+  "is_key_file": true,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/selenium-wrapper@0.0.8?uuid=14fd1a8a-1734-470a-b339-eb73a2cdbf45"
+  ],
+  "emails": [],
+  "urls": [
+    {
+      "url": "https://github.com/admc/wd",
+      "end_line": 29,
+      "start_line": 29
+    },
+    {
+      "url": "https://github.com/admc/wd/blob/master/doc/jsonwire-mapping.md",
+      "end_line": 31,
+      "start_line": 31
+    }
+  ],
+  "extra_data": {}
+},
+{
+  "path": "package/run.js",
+  "type": "file",
+  "name": "run.js",
+  "status": "application-package",
+  "tag": "",
+  "extension": ".js",
+  "size": 354,
+  "md5": "80b72847b14b53fcce0f904389cb9132",
+  "sha1": "a0129a1c73999842600d3f4212a33d088a6268e9",
+  "sha256": "413c8823de092db62c92babee203453b29ed84db78db33a7d169f784cb5ac05c",
+  "sha512": "",
+  "mime_type": "application/javascript",
+  "file_type": "Node.js script, ASCII text executable",
+  "programming_language": "JavaScript",
+  "is_binary": false,
+  "is_text": true,
+  "is_archive": false,
+  "is_media": false,
+  "is_legal": false,
+  "is_manifest": false,
+  "is_readme": false,
+  "is_top_level": true,
+  "is_key_file": false,
+  "detected_license_expression": "",
+  "detected_license_expression_spdx": "",
+  "license_detections": [],
+  "license_clues": [],
+  "percentage_of_license_text": 0.0,
+  "compliance_alert": "",
+  "copyrights": [],
+  "holders": [],
+  "authors": [],
+  "package_data": [],
+  "for_packages": [
+    "pkg:npm/selenium-wrapper@0.0.8?uuid=14fd1a8a-1734-470a-b339-eb73a2cdbf45"
+  ],
+  "emails": [],
+  "urls": [],
+  "extra_data": {}
+}],
+"relations": [
+]
+}
